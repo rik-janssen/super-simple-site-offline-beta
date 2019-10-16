@@ -1,0 +1,1 @@
+<?php /* uninstall hooks */ ?>
