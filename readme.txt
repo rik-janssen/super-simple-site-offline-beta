@@ -1,7 +1,7 @@
 === Test Plugin ===
 Contributors: Rik Janssen
 Tags: tag, tag, tag
-Donate link: https://www.beta-media.com/
+Donate link: https://betacore.online/
 Requires at least: 4.0
 Tested up to: 5.2
 Requires PHP: 5.8
