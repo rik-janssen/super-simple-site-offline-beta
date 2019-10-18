@@ -1,53 +1,36 @@
 === Test Plugin ===
 Contributors: Rik Janssen
-Tags: tag, tag, tag
+Tags: offline, offline mode, blackout, work in progress, under construction, forward, header, redirect
 Donate link: https://betacore.online/
-Requires at least: 4.0
-Tested up to: 5.2
+Requires at least: 5.2
+Tested up to: 5.2.4
 Requires PHP: 5.8
-Stable tag: 0.2
+Stable tag: 0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Short description of this great plugin. No more than 150 characters, no markup.
+Simple Site Offline by Beta is a super simple but versatile site-offline plugin. No bells and whistles, just straight to the point.
 
 == Description ==
-Long description of this great plugin. No characters limit, and you can use markdown.
+Site offline plugins are made awesome again with this piece of code. While most site offline plugins are bulky, intrusive and annoying this one is as light as a feather and has no paid options. The nav item is neatly tucked away within the settings menu so it feels like it is part of Wordpress.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-markdown parsed.
+Super Simple Site Offline contains the following features:
+* Simple enable and disable button and settings page.
+* Custom background, display text and logo for the ones who have a logo.
+* A redirect option for if you want to close a site and make sure all the trafic is forwarded to the new site.
 
-Ordered list:
-
-1. Some feature
-1. Another feature
-1. Something else about the plugin
-
-Unordered list:
-
-* something
-* something else
-* third thing
-
-Link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
-
-Titles are optional, naturally.
-
-Asterisks for *emphasis*.
-
-Double it up  for **strong**.
 
 == Installation ==
-1. Upload "test-plugin.php" to the "/wp-content/plugins/" directory.
-1. Activate the plugin through the "Plugins" menu in WordPress.
-1. Place "do_action( 'plugin_name_hook' );" in your templates.
+1. Upload the unpacked folder to the "/wp-content/plugins/" directory.
+2. Activate the plugin through the "Plugins" menu in WordPress.
+3. Go to the settings menu and activate the offline mode.
 
 == Frequently Asked Questions ==
-= A question that someone might have =
-An answer to that question.
+= Can it do a redirect? =
+Oh yes it sure can! The best redirect you've ever seen.
 
 = What about foo bar? =
-Answer to foo bar dilemma.
+Answer to foo bar dilemma. We still don't know how the foo hit the bar. But 42 is always the answer as far as I'm concerned.
 
 == Screenshots ==
 1. The screenshot description corresponds to screenshot-1.(png|jpg|jpeg|gif).
@@ -55,16 +38,11 @@ Answer to foo bar dilemma.
 3. The screenshot description corresponds to screenshot-3.(png|jpg|jpeg|gif).
 
 == Changelog ==
-= 0.2 =
-* A change since the previous version.
-* Another change.
-
-= 0.1 =
+= 0.8 =
 * Initial release.
 
-== Upgrade Notice ==
-= 0.2 =
-Upgrade notices describe the reason a user should upgrade
+= Up to 0.7 =
+* Lots and lots of updates that happened on my own server but didn't take the time to write them down.
 
-= 0.1 =
-This version fixes a security related bug. Upgrade immediately.
+== Upgrade Notice ==
+
