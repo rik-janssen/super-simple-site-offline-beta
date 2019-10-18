@@ -45,4 +45,5 @@ Answer to foo bar dilemma. We still don't know how the foo hit the bar. But 42 i
 * Lots and lots of updates that happened on my own server but didn't take the time to write them down.
 
 == Upgrade Notice ==
-
+= 0.8 =
+* Some improved functions since the previous versions.
