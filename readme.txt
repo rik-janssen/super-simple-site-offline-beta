@@ -1,7 +1,7 @@
-=== Test Plugin ===
+=== Super Simple Site Offline ===
 Contributors: Rik Janssen
 Tags: offline, offline mode, blackout, work in progress, under construction, forward, header, redirect
-Donate link: https://betacore.online/
+Donate link: https://betacore.tech/
 Requires at least: 5.2
 Tested up to: 5.2.4
 Requires PHP: 5.8

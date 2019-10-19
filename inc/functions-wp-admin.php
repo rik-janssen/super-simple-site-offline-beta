@@ -14,6 +14,33 @@ function beta_function_for_sub(){
 	
 }
 
+
+function beta_settings_register($setting_name='beta_setting') {
+	
+	// sanitize settings
+    $args_html = array(
+            'type' => 'string', 
+            'sanitize_callback' => 'wp_kses_post',
+            'default' => NULL,
+            );	
+    $args_int = 'intval';
+	
+    $args_text = array(
+            'type' => 'string', 
+            'sanitize_callback' => 'sanitize_text_field',
+            'default' => NULL,
+            );
+	
+    register_setting( $setting_name, 'beta_offline_toggle', $args_int );
+    register_setting( $setting_name, 'beta_page_type', $args_int );
+    register_setting( $setting_name, 'beta_custom_html', $args_html );
+    register_setting( $setting_name, 'beta_custom_logo', $args_text );
+}
+add_action( 'admin_init', 'beta_settings_register' );
+
+
+/* input forms and functions */
+
 function beta_radio_input($arg){
 
 ?>
