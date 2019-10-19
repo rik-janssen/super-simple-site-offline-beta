@@ -2,18 +2,38 @@
 /* ---------------------------------------- */
 /* creating the site offline functionality  */
 
-function beta_set_header($option){
+function beta_set_header($option,$url=false){
+    
+    if ( $_SERVER['SERVER_PROTOCOL'] === 'HTTP/1.1' ) {
+        $protocol = 'HTTP/1.1';
+    }else{
+		$protocol = 'HTTP/1.0';
+	}
 
-
+	if($option==503){
+		$header = ' 503 Service Unavailable';
+	}elseif($option==307){
+		$header = ' 307 Temporary Redirect';
+	}elseif($option==301){
+		$header = ' 301 Moved Permanently';
+	}
+	
+    header( $protocol . $header, true, $option );
+	if($url!=false){
+		header( 'Location: '.$url );
+	}else{
+    	header( 'Retry-After: 3600' );
+	}
 }
+
 
 function beta_site_offline(){
 
     // check if the option is set
     if( check option here ) {
-        $beta_site_uc_status = true; // user is logged in AND and administrator or editor
+        $beta_site_uc_status = true; // site is offline so run
     }else{
-        $beta_site_uc_status = false; // not logged in, so visitor
+        $beta_site_uc_status = false; // site is online so not run
     }
     
     // check if the user is logged in
@@ -35,3 +55,5 @@ function beta_site_offline(){
     }
 
 }
+
+// Enable and disable the function by adding it to the hook.
