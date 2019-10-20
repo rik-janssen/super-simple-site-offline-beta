@@ -1,15 +1,18 @@
 <?php
 /* ---------------------------------------- */
-/* creating the site offline functionality  */
+/* Some header information to give it some  */
+/* personality for services like Google.    */
 
 function beta_set_header($option,$url=false){
     
+	// check the protocol
     if ( $_SERVER['SERVER_PROTOCOL'] === 'HTTP/1.1' ) {
         $protocol = 'HTTP/1.1';
     }else{
 		$protocol = 'HTTP/1.0';
 	}
 
+	// add header information
 	if($option==503){
 		$header = ' 503 Service Unavailable';
 	}elseif($option==307){
@@ -18,14 +21,18 @@ function beta_set_header($option,$url=false){
 		$header = ' 301 Moved Permanently';
 	}
 	
+	//execute the headers
     header( $protocol . $header, true, $option );
 	if($url!=false){
 		header( 'Location: '.$url );
 	}else{
     	header( 'Retry-After: 3600' );
 	}
+	
 }
 
+/* ---------------------------------------- */
+/* creating the site offline functionality  */
 
 function beta_site_offline(){
 	
@@ -70,11 +77,21 @@ if (!is_admin()){
 	
 	// if someone is not an admin, add this action!
 	add_action('init', 'beta_site_offline');
+	
 }
-// Enable and disable the function by adding it to the hook.
+
+/* ---------------------------------------- */
+/* Fetch image information by ID            */
 
 function beta_get_image($img_ID){
+	
+	
 	$imgid = (isset( $img_ID )) ? $img_ID : "";
 	$img   = wp_get_attachment_image_src($imgid, 'full');
+	
 	return $img[0];
+	
 }
+
+
+

@@ -1,4 +1,37 @@
-/* CSS Document */
+/* ------------------------------ */
+/* By Rik Janssen / Betacore.tech */
+/* ------------------------------ */
+
+/* the form styles */
+
+.beta_thumbnail{
+	padding: 10px;
+	border: 1px solid #DAE1E7;
+	background-color: #fff;
+	display: inline-block;
+	min-width: 25em;
+	border-radius: 2px;
+	overflow: hidden;
+	box-sizing: border-box;
+
+}
+
+.beta_thumbnail img{
+	border: 1px solid #CDD2D8;
+	background-color: #fff;
+	border-radius: 2px;
+	float: left;
+	margin-right: 10px;
+}
+
+.beta_thumbnail p{
+	margin: 0px !important;
+	padding: 0px !important;
+	line-height: 19px;
+}
+
+/* the plugin page footer */
+
 .beta_offline_footer{
 	overflow: hidden;
 	margin-top: 50px;
@@ -30,4 +63,20 @@
 	padding: 0px;
 	padding-top: 5px;
 	color: #313131 !important;
+}
+
+.beta_donate{
+	float: right;
+}
+
+/* the admin bar label */
+
+li.beta_offline a.ab-item{
+	background-color: #0088C9 !important;
+	color: #fff !important;
+}
+
+li.beta_offline a.ab-item:hover{
+	background-color: #F15A29 !important;
+	color: #fff !important;
 }

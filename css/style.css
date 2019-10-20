@@ -51,8 +51,6 @@ p.beta_label{
 	color: #979797;
 }
 
-
-
 a{
 	color: #0073aa;
 	text-decoration: underline;
@@ -78,4 +76,15 @@ a:hover{
 		padding: 30px;
 		width: 100%;
 	}
+}
+
+/* wpadmin bar */
+li.beta_offline a.ab-item{
+	background-color: #0088C9 !important;
+	color: #fff !important;
+}
+
+li.beta_offline a.ab-item:hover{
+	background-color: #F15A29 !important;
+	color: #fff !important;
 }

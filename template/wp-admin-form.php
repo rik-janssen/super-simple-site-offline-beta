@@ -13,13 +13,13 @@
                 </th>
                  <td>
 		<?php 
-		$radio_vars = array( 'name'=>'site_offline',
-						 	 'val_1'=>'0',
-							 'val_2'=>'1',
+		$check_vars = array( 'name'=>'site_offline',
+						 	 'val'=>'1',
 							 'selected'=>get_option('beta_site_offline')
 						   );
 		
-		beta_radio_input($radio_vars); ?>
+		beta_check_input($check_vars); ?>
+					 <p><?php _e('By checking this box your website will display an offline message for the outside world and Google bots while you can still view your website when logged in as admin or editor.','betaoffline'); ?></p>
                 </td>
             </tr> 
             <tr valign="top">
@@ -28,13 +28,13 @@
                 </th>
                 <td>
 				<?php 
-				$radio_vars = array( 'name'=>'offline_redirect',
-									 'val_1'=>'0',
-									 'val_2'=>'1', 
+				$check_vars = array( 'name'=>'offline_redirect',
+									 'val'=>'1',
 									 'selected'=>get_option('beta_offline_redirect')
 								   );
 
-				beta_radio_input($radio_vars); ?>
+				beta_check_input($check_vars); ?>
+					<p><?php _e("If you don't want to display an offline message but redirect the visitor to another website, please check this box and fill out the information below.",'betaoffline'); ?></p>
                 </td>
             </tr> 
             <tr valign="top">
@@ -53,6 +53,7 @@
 								   );
 
 				beta_select_box($select_vars); ?>
+					<p><?php _e("Give browsers and Google more information about your intentions behind the offline page.",'betaoffline'); ?></p>
                 </td>
             </tr>                     
             <tr valign="top">
@@ -66,6 +67,7 @@
 								   );
 
 				beta_input_field($input_vars); ?>
+					 <p><?php _e("If redirect is enabled this is the location where visitors are forwarded to.",'betaoffline'); ?></p>
                 </td>
            </tr>                   
              <tr valign="top">
@@ -157,19 +159,14 @@
 
 <h3>Todo</h3>
 <ul>
-	<li>make pretty offline page</li>
-	<li>tie eerything together and hook it</li>
-	<li>Donate button</li>
-	<li>clean up files</li>
-	<li>update template</li>
-	<li>artwork and site page</li>
-	<li>readme.txt</li>
+	<li>readme.txt (todo: screenshots)</li>
 	<li>submit to wordpress.org</li>
 </ul>
 
 
 
 <div class="beta_offline_footer">
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="beta_donate"><input name="cmd" type="hidden" value="_s-xclick"><input name="hosted_button_id" type="hidden" value="MBLCTW6UE6L5E"><input title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" name="submit" src="https://www.paypalobjects.com/en_US/NL/i/btn/btn_donateCC_LG.gif" type="image"><img src="https://www.paypal.com/en_NL/i/scr/pixel.gif" alt="" width="1" height="1" border="0"></form>
 	<a href="https://beta-media.com/super-simple-site-offline-wordpress-plugin/"><img src="<?php echo plugin_dir_url( __DIR__ ); ?>img/betalogo-b.png" /></a>
 	<h2>Check out my other plugins at</h2>
 	<p><a href="https://www.betacore.tech" target="_blank">www.betacore.tech</a></p>
