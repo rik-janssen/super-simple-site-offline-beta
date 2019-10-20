@@ -1,11 +1,11 @@
-body{
+.betaplugin{
 	background-color: #f1f1f1;
 	margin: 0px;
 	padding: 0px;
 	font-family: "Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 
-div{
+#beta_container div{
 	box-sizing: border-box;
 }
 
@@ -21,14 +21,14 @@ div{
 	padding-top: 17vh;
 }
 
-.beta_message_box_wrapper{
+#beta_container .beta_message_box_wrapper{
 	width: 100%;
 	max-width: 600px;
 	margin: 0 auto;
 	padding: 20px;
 }
 
-.beta_message_box{
+#beta_container .beta_message_box{
 	background-color: rgba(255,255,255,0.85);
 	padding: 40px;
 	width: 100%;
@@ -37,11 +37,16 @@ div{
 	text-align: center;
 }
 
-img.beta_offline_logo{
+#beta_container img.beta_offline_logo{
 	max-height: 80px;
 }
 
-h1, h2, h3, h4, h5, p{
+#beta_container h1, 
+#beta_container h2, 
+#beta_container h3, 
+#beta_container h4, 
+#beta_container h5, 
+#beta_container p{
 	color: #3A424A;	
 }
 
@@ -51,12 +56,12 @@ p.beta_label{
 	color: #979797;
 }
 
-a{
+#beta_container a{
 	color: #0073aa;
 	text-decoration: underline;
 }
 
-a:hover{
+#beta_container a:hover{
 	color: #0088C9;
 	text-decoration: underline;
 }
@@ -67,12 +72,12 @@ a:hover{
 		padding-top: 40px;
 	}
 	
-	.beta_message_box_wrapper{
+	#beta_container .beta_message_box_wrapper{
 		width: 100%;
 		max-width: auto;
 	}
 
-	.beta_message_box{
+	#beta_container .beta_message_box{
 		padding: 30px;
 		width: 100%;
 	}

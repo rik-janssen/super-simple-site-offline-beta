@@ -117,7 +117,7 @@ function beta_radio_input($arg){
 /* ---------------------------------------- */
 /* This one is a check button for the wpadm */
 
-function beta_check_input($arg){
+function beta_check_input($arg, $label=''){
 	if ($arg['selected']==''){
 		$arg['selected']=0;
 	}
@@ -130,6 +130,7 @@ function beta_check_input($arg){
 			   <?php 
 				if($arg['selected']==$arg['val']){ echo "checked"; } ?> />
 		<span></span>
+		<?php if ($label!=''){ echo "<label>".__($label,'betaoffline')."</label>"; } ?>
 	</label>
 </div>
 <?php

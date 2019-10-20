@@ -1,7 +1,6 @@
-
 <div class="wrap">
 		
-    <h1>Site Offline</h1>
+    <h1>Site Offline Settings</h1>
 
     <form method="post" action="options.php">
         <?php settings_fields( 'beta_offlinesettings' ); ?>
@@ -18,10 +17,13 @@
 							 'selected'=>get_option('beta_site_offline')
 						   );
 		
-		beta_check_input($check_vars); ?>
-					 <p><?php _e('By checking this box your website will display an offline message for the outside world and Google bots while you can still view your website when logged in as admin or editor.','betaoffline'); ?></p>
+		beta_check_input($check_vars, 'By checking this box your website will display an offline message for the outside world and Google bots while you can still view your website when logged in as admin or editor.'); ?>
                 </td>
             </tr> 
+		</table>
+		<br />
+		<h2><?php _e('Redirect','betaoffline'); ?></h2>
+			<table class="beta_forms form-table">
             <tr valign="top">
                 <th scope="row">
                     <?php _e("Enable Redirect", 'betaoffline'); ?>
@@ -33,29 +35,10 @@
 									 'selected'=>get_option('beta_offline_redirect')
 								   );
 
-				beta_check_input($check_vars); ?>
-					<p><?php _e("If you don't want to display an offline message but redirect the visitor to another website, please check this box and fill out the information below.",'betaoffline'); ?></p>
+				beta_check_input($check_vars, "If you don't want to display an offline message but redirect the visitor to another website, please check this box and fill out the information below."); ?>
                 </td>
             </tr> 
-            <tr valign="top">
-                <th scope="row">
-                    <?php _e("Header information", 'betaoffline'); ?>
-                </th>
-                <td>
-				<?php 
-				$select_vars = array( 'name'=>'offline_header',
-									 'options'=>array(
-													array('op_name'=>'503 Service Unavailable', 'op_value'=>'503'),
-													array('op_name'=>'307 Temporary Redirect', 'op_value'=>'307'),
-													array('op_name'=>'301 Moved Permanently', 'op_value'=>'301')
-													),
-									 'selected'=>get_option('beta_offline_header')
-								   );
-
-				beta_select_box($select_vars); ?>
-					<p><?php _e("Give browsers and Google more information about your intentions behind the offline page.",'betaoffline'); ?></p>
-                </td>
-            </tr>                     
+               
             <tr valign="top">
 	            <th scope="row">
                   <?php _e("Redirect URL", 'betaoffline'); ?>
@@ -70,19 +53,10 @@
 					 <p><?php _e("If redirect is enabled this is the location where visitors are forwarded to.",'betaoffline'); ?></p>
                 </td>
            </tr>                   
-             <tr valign="top">
-                <th scope="row">
-                    <?php _e("Background image", 'betaoffline'); ?>
-                </th>
-                 <td>
-				<?php 
-				$input_vars = array( 'name'=>'offline_background_image',
-									 'selected'=>get_option('beta_offline_background_image')
-								   );
-					 
-							beta_imageselect_field($input_vars); ?>
-                </td>
-            </tr>      
+    		</table>
+		<br />
+		<h2><?php _e('Display options','betaoffline'); ?></h2>
+			<table class="beta_forms form-table">
              <tr valign="top">
                 <th scope="row">
                     <?php _e("Logo", 'betaoffline'); ?>
@@ -101,7 +75,7 @@
                     <?php _e("The message people see", 'betaoffline'); ?>
                 </th>
                  <td>
-					 <p><?php _e('Write a message for the people that visit your site when offline mode is enabled. You can use HTML in this field but no javascript. If you like to return to the original message, just empty this field and save.','betaoffline'); ?></p>
+					 <p><?php _e('Write a message for the people that visit your site when offline mode is enabled. You can use HTML in this field but no javascript. If you like to return to the original message, just empty this field and save.','betaoffline'); ?></p><br />
 				<?php 
 					 
 				if (get_option('beta_offline_message')==""){
@@ -117,12 +91,25 @@
 				beta_textarea_field($textarea_vars); ?>
 				 </td>
             </tr>  
+		    <tr valign="top">
+                <th scope="row">
+                    <?php _e("Background image", 'betaoffline'); ?>
+                </th>
+                 <td>
+				<?php 
+				$input_vars = array( 'name'=>'offline_background_image',
+									 'selected'=>get_option('beta_offline_background_image')
+								   );
+					 
+							beta_imageselect_field($input_vars); ?>
+                </td>
+            </tr> 
              <tr valign="top">
                 <th scope="row">
                     <?php _e("Some custom CSS", 'betaoffline'); ?>
                 </th>
                  <td>
-					 <p><?php _e('If you like to change some things on the homepage, use this CSS box to do so. You will not lose changes when this plugin is updated.','betaoffline'); ?></p>
+					 <p><?php _e('If you like to change some things on the homepage, use this CSS box to do so. You will not lose changes when this plugin is updated.','betaoffline'); ?></p><br />
 				<?php 
 					 
 					 
@@ -133,19 +120,54 @@
 				beta_textarea_field($textarea_vars); ?>
 				 </td>
             </tr>  
+		</table>
+		<br />
+		<h2><?php _e('Header information','betaoffline'); ?></h2>
+		<table class="beta_forms form-table">
+            <tr valign="top">
+                <th scope="row">
+                    <?php _e("Header information", 'betaoffline'); ?>
+                </th>
+                <td>
+				<?php 
+				$select_vars = array( 'name'=>'offline_header',
+									 'options'=>array(
+													array('op_name'=>'503 Service Unavailable', 'op_value'=>'503'),
+													array('op_name'=>'307 Temporary Redirect', 'op_value'=>'307'),
+													array('op_name'=>'301 Moved Permanently', 'op_value'=>'301')
+													),
+									 'selected'=>get_option('beta_offline_header')
+								   );
+
+				beta_select_box($select_vars); ?>
+					<p><?php _e("Give browsers and Google more information about your intentions behind the offline page and/or the redirect you have set up.",'betaoffline'); ?></p>
+                </td>
+            </tr>      
+		</table>
+		<br />
+		<h2><?php _e('Support Beta','betaoffline'); ?></h2>
+		<table class="beta_forms form-table">
            <tr valign="top">
                 <th scope="row">
                     <?php _e("Show the Beta Label", 'betaoffline'); ?>
                 </th>
                  <td>
-					 <p>If you like this plugin, please leave it on. This will show the Beta and Wordpress links at the bottom of the offline-page.</p>
 		<?php 
 		$check_vars = array( 'name'=>'offline_label',
 						 	 'val'=>'1',
 							 'selected'=>get_option('beta_offline_label')
 						   );
 		
-		beta_check_input($check_vars); ?>
+		beta_check_input($check_vars, 'If you like this plugin, please check this box. This will show the Beta and Wordpress links at the bottom of the offline-page. Thank you!'); ?>
+					 <label></label>
+                </td>
+            </tr> 
+		    <tr valign="top">
+                <th scope="row">
+                    <?php _e("Show this plugin some love", 'betaoffline'); ?>
+                </th>
+                 <td>
+					<a href="#">Write a review</a> | <a href="#">Rate this plugin</a>
                 </td>
             </tr> 
         </table>

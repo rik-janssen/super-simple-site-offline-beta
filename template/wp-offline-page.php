@@ -27,7 +27,7 @@
 	<style>
 		<?php echo $message_css; ?>
 	</style>
-	<body>
+	<body class="betaplugin">
 		
 		<div id="beta_container"<?php echo $background_image; ?>>
 			<div class="beta_message_box_wrapper">
