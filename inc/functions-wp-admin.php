@@ -15,7 +15,9 @@ function beta_function_for_sub(){
 }
 
 
-function beta_settings_register($setting_name='beta_setting') {
+function beta_settings_register() {
+	
+	$setting_name = 'beta_offlinesettings';
 	
 	// sanitize settings
     $args_html = array(
@@ -31,18 +33,21 @@ function beta_settings_register($setting_name='beta_setting') {
             'default' => NULL,
             );
 	
-    register_setting( $setting_name, 'beta_offline_toggle', $args_int );
-    register_setting( $setting_name, 'beta_page_type', $args_int );
-    register_setting( $setting_name, 'beta_custom_html', $args_html );
-    register_setting( $setting_name, 'beta_custom_logo', $args_text );
+    register_setting( $setting_name, 'beta_site_offline', $args_int ); // radio
+    register_setting( $setting_name, 'beta_offline_redirect', $args_int ); // radio
+    register_setting( $setting_name, 'beta_offline_header', $args_int ); // select -> int
+    register_setting( $setting_name, 'beta_offline_redirect_url', $args_text );
+    register_setting( $setting_name, 'beta_offline_background_image', $args_int );
+    register_setting( $setting_name, 'beta_offline_logo', $args_int );
+    register_setting( $setting_name, 'beta_offline_message', $args_html );
 }
+
 add_action( 'admin_init', 'beta_settings_register' );
 
 
 /* input forms and functions */
 
 function beta_radio_input($arg){
-
 ?>
 <div class="beta_radio_wrapper">
 	<label>
@@ -60,7 +65,7 @@ function beta_radio_input($arg){
 			   <?php if($arg['selected']==$arg['val_2']){ echo "checked"; } ?>/>
 		<span></span>
 	</label>
-	<?php if ($arg['val_3']!=''){ ?>
+	<?php if (isset($arg['val_3'])){ ?>
 	<label>
 		<input type="radio" 
 			   name="beta_<?php echo $arg['name']; ?>" 
@@ -93,6 +98,7 @@ function beta_input_field($arg){
 	<input type="text"
 		   name="beta_<?php echo $arg['name']; ?>"
 		   value="<?php echo $arg['selected']; ?>"
+		   class="regular-text"
 		   />
 </div>
 <?php	
@@ -101,8 +107,65 @@ function beta_input_field($arg){
 function beta_textarea_field($arg){
 ?>
 <div class="beta_textarea_wrapper">
-	<textarea name="beta_<?php echo $arg['name']; ?>"><?php echo $arg['selected']; ?></textarea>
+	<textarea name="beta_<?php echo $arg['name']; ?>" 
+			  class="large-text code"
+			  rows="10"
+			  cols="50"><?php echo $arg['selected']; ?></textarea>
 </div>
 <?php	
 }
+
+// the more complex image select field
+add_action ( 'admin_enqueue_scripts', function () {
+    if (is_admin ())
+        wp_enqueue_media ();
+} );
+
+function beta_imageselect_field($arg){
+	
+	$imgid =(isset( $arg[ 'selected' ] )) ? $arg[ 'selected' ] : "";
+	$img    = wp_get_attachment_image_src($imgid, 'thumbnail');
+
+	?>
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+		var $ = jQuery;
+		if ($('.<?php echo 'beta_'.$arg['name']; ?>').length > 0) {
+			if ( typeof wp !== 'undefined' && wp.media && wp.media.editor) {
+				$('.<?php echo 'beta_'.$arg['name']; ?>').on('click', function(e) {
+					e.preventDefault();
+					var button = $(this);
+					var id = button.prev();
+					wp.media.editor.send.attachment = function(props, attachment) {
+						id.val(attachment.id);
+					};
+					wp.media.editor.open(button);
+					return false;
+				});
+			}
+		}
+	});
+	</script>
+	<div class="beta_select_wrapper">
+	<?php 
+	if($img != "") { ?>
+	<div class="beta_thumbnail">
+		<img src="<?= $img[0]; ?>" width="80px" />
+		<p><?php _e('The currently selected image','betaoffline'); ?></p>
+	</div>
+	<?php }	?>
+	<p><?php _e('Select a new image to replace the one above:','betaoffline'); ?></p>
+	<input type="text" 
+		   value="<?php echo $arg['selected']; ?>" 
+		   class="regular-text process_custom_images" 
+		   id="process_custom_images" 
+		   name="<?php echo 'beta_'.$arg['name']; ?>" 
+		   max="" 
+		   min="1" 
+		   step="1" />
+	<button class="<?php echo 'beta_'.$arg['name']; ?> button"><?php _e('Media library','betaoffline'); ?></button>
+	</div>
+	<?php
+}
+
 ?>
