@@ -73,11 +73,17 @@ function beta_site_offline(){
 
 }
 
-if (!is_admin()){
-	
-	// if someone is not an admin, add this action!
+if ( ! is_admin() && ! is_login_page() ) {
+
+	// if someone is not an admin or not on the login page, add this action!
 	add_action('init', 'beta_site_offline');
 	
+}
+
+
+// quick check if we are on a login page
+function is_login_page() {
+    return in_array($GLOBALS['pagenow'], array('wp-login.php', 'wp-register.php'));
 }
 
 /* ---------------------------------------- */

@@ -1,13 +1,13 @@
 === Super Simple Site Offline ===
 Contributors: Rik Janssen
 Tags: offline, offline mode, blackout, work in progress, under construction, forward, header, redirect
-Donate link: https://betacore.tech/
+Donate link: https://www.paypal.com/donate/?token=y9x2_N0_18pSbdHE9l9jivsqB3aTKgWQ3qGgxg_t6VUUmSU6B2H1hUcANUBzhX5xV0qg2G&country.x=NL&locale.x=NL
 Requires at least: 5.2
 Tested up to: 5.2.4
 Requires PHP: 5.8
 Stable tag: 0.8
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GPLv3
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 Simple Site Offline by Beta is a super simple but versatile site-offline plugin. No bells and whistles, just straight to the point.
 
@@ -29,13 +29,16 @@ Super Simple Site Offline contains the following features:
 = Can it do a redirect? =
 Oh yes it sure can! The best redirect you've ever seen.
 
+= Is half of it unusable because I have to pay? =
+No. The entire thing is free.
+
 = What about foo bar? =
 Answer to foo bar dilemma. We still don't know how the foo hit the bar. But 42 is always the answer as far as I'm concerned.
 
 == Screenshots ==
-1. The screenshot description corresponds to screenshot-1.(png|jpg|jpeg|gif).
-2. The screenshot description corresponds to screenshot-2.(png|jpg|jpeg|gif).
-3. The screenshot description corresponds to screenshot-3.(png|jpg|jpeg|gif).
+1. Hide your website temporarily for the outside world.
+2. Some of the options you can work with all neatly tucked away under the settings tab.
+3. If you want a background image, no problem! Branding is really simple.
 
 == Changelog ==
 = 0.8 =
