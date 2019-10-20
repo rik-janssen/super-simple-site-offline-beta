@@ -141,8 +141,8 @@
 					 <p>If you like this plugin, please leave it on. This will show the Beta and Wordpress links at the bottom of the offline-page.</p>
 		<?php 
 		$radio_vars = array( 'name'=>'offline_label',
-						 	 'val_1'=>'1',
-							 'val_2'=>'0',
+						 	 'val_1'=>'0',
+							 'val_2'=>'1',
 							 'selected'=>get_option('beta_offline_label')
 						   );
 		
