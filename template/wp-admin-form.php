@@ -99,15 +99,54 @@
                     <?php _e("The message people see", 'betaoffline'); ?>
                 </th>
                  <td>
-					 <p><?php _e('Write a message for the people that visit your site when offline mode is enabled. You can use HTML in this field but no javascript.','betaoffline'); ?></p>
+					 <p><?php _e('Write a message for the people that visit your site when offline mode is enabled. You can use HTML in this field but no javascript. If you like to return to the original message, just empty this field and save.','betaoffline'); ?></p>
 				<?php 
+					 
+				if (get_option('beta_offline_message')==""){
+					$get_a_message = __("<h1>".get_bloginfo('name')." is under construction at the moment.</h1>\r<p>Sorry for the inconvenience. Please return to this website at a later point. Thank you!</p>",'betaoffline');
+				}else{
+					$get_a_message = get_option('beta_offline_message');
+				}
+					 
 				$textarea_vars = array( 'name'=>'offline_message',
-									 'selected'=>get_option('beta_offline_message')
+									 'selected'=>$get_a_message
 								   );
 
 				beta_textarea_field($textarea_vars); ?>
 				 </td>
             </tr>  
+             <tr valign="top">
+                <th scope="row">
+                    <?php _e("Some custom CSS", 'betaoffline'); ?>
+                </th>
+                 <td>
+					 <p><?php _e('If you like to change some things on the homepage, use this CSS box to do so. You will not lose changes when this plugin is updated.','betaoffline'); ?></p>
+				<?php 
+					 
+					 
+				$textarea_vars = array( 'name'=>'offline_css',
+									 'selected'=>get_option('beta_offline_css')
+								   );
+
+				beta_textarea_field($textarea_vars); ?>
+				 </td>
+            </tr>  
+           <tr valign="top">
+                <th scope="row">
+                    <?php _e("Show the Beta Label", 'betaoffline'); ?>
+                </th>
+                 <td>
+					 <p>If you like this plugin, please leave it on. This will show the Beta and Wordpress links at the bottom of the offline-page.</p>
+		<?php 
+		$radio_vars = array( 'name'=>'offline_label',
+						 	 'val_1'=>'1',
+							 'val_2'=>'0',
+							 'selected'=>get_option('beta_offline_label')
+						   );
+		
+		beta_radio_input($radio_vars); ?>
+                </td>
+            </tr> 
         </table>
         <?php submit_button(); ?>
         </form>
@@ -120,7 +159,6 @@
 <ul>
 	<li>make pretty offline page</li>
 	<li>tie eerything together and hook it</li>
-	<li>Make it safe....</li>
 	<li>Donate button</li>
 	<li>clean up files</li>
 	<li>update template</li>

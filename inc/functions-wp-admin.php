@@ -40,6 +40,8 @@ function beta_settings_register() {
     register_setting( $setting_name, 'beta_offline_background_image', $args_int );
     register_setting( $setting_name, 'beta_offline_logo', $args_int );
     register_setting( $setting_name, 'beta_offline_message', $args_html );
+	register_setting( $setting_name, 'beta_offline_css', $args_html );
+	register_setting( $setting_name, 'beta_offline_label', $args_html );
 }
 
 add_action( 'admin_init', 'beta_settings_register' );
@@ -48,6 +50,9 @@ add_action( 'admin_init', 'beta_settings_register' );
 /* input forms and functions */
 
 function beta_radio_input($arg){
+	if ($arg['selected']==''){
+		$arg['selected']=0;
+	}
 ?>
 <div class="beta_radio_wrapper">
 	<label>
@@ -79,6 +84,7 @@ function beta_radio_input($arg){
 }
 
 function beta_select_box($arg){
+
 ?>
 <div class="beta_select_wrapper">
 	<select name="beta_<?php echo $arg['name']; ?>">

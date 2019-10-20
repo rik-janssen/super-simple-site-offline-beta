@@ -28,9 +28,9 @@ function beta_set_header($option,$url=false){
 
 
 function beta_site_offline(){
-
+	
     // check if the option is set
-    if( check option here ) {
+    if( get_option('beta_site_offline') == 1 ) {
         $beta_site_uc_status = true; // site is offline so run
     }else{
         $beta_site_uc_status = false; // site is online so not run
@@ -45,15 +45,36 @@ function beta_site_offline(){
     
     // here it all comes together: is the status OFFLINE and loggedin TRUE?
     if ($beta_site_uc_status == true AND $beta_site_uc_loggedin == false){   
-				
-        beta_set_header($header_option); // send along header information
-        
-        include plugin_dir_path( __DIR__ ).'template/wp-offline-page.php';
-                
+
+        beta_set_header(get_option('beta_site_header')); // send along header information
+
+		if (get_option( 'beta_offline_redirect' )==1){
+			
+			// when the user wants a redirect...
+			header( 'Location: '.get_option( 'beta_offline_redirect_url' ) );
+			
+        }else{
+			
+			// when the user wants to show a pretty page..
+        	include plugin_dir_path( __DIR__ ).'template/wp-offline-page.php';
+			
+		}
+		
         die(); // and make sure nothing is following this page
         
     }
 
 }
 
+if (!is_admin()){
+	
+	// if someone is not an admin, add this action!
+	add_action('init', 'beta_site_offline');
+}
 // Enable and disable the function by adding it to the hook.
+
+function beta_get_image($img_ID){
+	$imgid = (isset( $img_ID )) ? $img_ID : "";
+	$img   = wp_get_attachment_image_src($imgid, 'full');
+	return $img[0];
+}

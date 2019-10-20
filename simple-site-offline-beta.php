@@ -11,6 +11,7 @@
 /* DEPENDENCIES */
 include_once('inc/functions-nav.php'); // the wp-admin navigation
 include_once('inc/functions-wp-admin.php'); // the wp-admin navigation
+include_once('inc/functions-offline.php'); // offline mode stuff
 
 
 
