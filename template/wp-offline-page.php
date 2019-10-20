@@ -6,7 +6,7 @@
 		$background_image = "";
 	}
 
-	if (get_option( 'beta_offline_logo' )!=0 OR get_option( 'beta_offline_logo' )!=''){
+	if (get_option( 'beta_offline_logo' )!=0){
 		$logo_image = '<img src="'.beta_get_image(get_option( 'beta_offline_logo' )).'" class="beta_offline_logo" alt="'.get_bloginfo('name').'" />';
 	}else{
 		$logo_image = "";
@@ -23,7 +23,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 	<meta name="robots" content="noindex,nofollow">
-	<link rel="stylesheet" id="beta-admin-css" href="<?php echo get_home_url();?>/wp-content/plugins/simple-site-offline/css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" id="beta-admin-css" href="<?php echo plugin_dir_url( __DIR__ ); ?>css/style.css" type="text/css" media="all" />
 	<style>
 		<?php echo $message_css; ?>
 	</style>
