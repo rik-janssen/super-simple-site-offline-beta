@@ -140,13 +140,12 @@
                  <td>
 					 <p>If you like this plugin, please leave it on. This will show the Beta and Wordpress links at the bottom of the offline-page.</p>
 		<?php 
-		$radio_vars = array( 'name'=>'offline_label',
-						 	 'val_1'=>'0',
-							 'val_2'=>'1',
+		$check_vars = array( 'name'=>'offline_label',
+						 	 'val'=>'1',
 							 'selected'=>get_option('beta_offline_label')
 						   );
 		
-		beta_radio_input($radio_vars); ?>
+		beta_check_input($check_vars); ?>
                 </td>
             </tr> 
         </table>
@@ -154,15 +153,6 @@
         </form>
 			
 </div>
-
-
-
-<h3>Todo</h3>
-<ul>
-	<li>readme.txt (todo: screenshots)</li>
-	<li>submit to wordpress.org</li>
-</ul>
-
 
 
 <div class="beta_offline_footer">
