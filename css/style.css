@@ -5,11 +5,11 @@
 	font-family: "Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 
-#beta_container div{
+#bcSOFF_container div{
 	box-sizing: border-box;
 }
 
-#beta_container{
+#bcSOFF_container{
 	width: 100%;
 	height: 100vh;
 	background-repeat: no-repeat;
@@ -21,14 +21,14 @@
 	padding-top: 17vh;
 }
 
-#beta_container .beta_message_box_wrapper{
+#bcSOFF_container .bcSOFF_message_box_wrapper{
 	width: 100%;
 	max-width: 600px;
 	margin: 0 auto;
 	padding: 20px;
 }
 
-#beta_container .beta_message_box{
+#bcSOFF_container .bcSOFF_message_box{
 	background-color: rgba(255,255,255,0.85);
 	padding: 40px;
 	width: 100%;
@@ -37,59 +37,59 @@
 	text-align: center;
 }
 
-#beta_container img.beta_offline_logo{
+#bcSOFF_container img.bcSOFF_offline_logo{
 	max-height: 80px;
 }
 
-#beta_container h1, 
-#beta_container h2, 
-#beta_container h3, 
-#beta_container h4, 
-#beta_container h5, 
-#beta_container p{
+#bcSOFF_container h1, 
+#bcSOFF_container h2, 
+#bcSOFF_container h3, 
+#bcSOFF_container h4, 
+#bcSOFF_container h5, 
+#bcSOFF_container p{
 	color: #3A424A;	
 }
 
-p.beta_label{
+p.bcSOFF_label{
 	font-size: 13px;
 	text-align: right;
 	color: #979797;
 }
 
-#beta_container a{
+#bcSOFF_container a{
 	color: #0073aa;
 	text-decoration: underline;
 }
 
-#beta_container a:hover{
+#bcSOFF_container a:hover{
 	color: #0088C9;
 	text-decoration: underline;
 }
 
 @media only screen and (max-width:640px) {
 	
-	#beta_container{
+	#bcSOFF_container{
 		padding-top: 40px;
 	}
 	
-	#beta_container .beta_message_box_wrapper{
+	#bcSOFF_container .bcSOFF_message_box_wrapper{
 		width: 100%;
 		max-width: auto;
 	}
 
-	#beta_container .beta_message_box{
+	#bcSOFF_container .bcSOFF_message_box{
 		padding: 30px;
 		width: 100%;
 	}
 }
 
 /* wpadmin bar */
-li.beta_offline a.ab-item{
+li.bcSOFF_offline a.ab-item{
 	background-color: #0088C9 !important;
 	color: #fff !important;
 }
 
-li.beta_offline a.ab-item:hover{
+li.bcSOFF_offline a.ab-item:hover{
 	background-color: #F15A29 !important;
 	color: #fff !important;
 }

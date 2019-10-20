@@ -3,7 +3,7 @@
 /* Some header information to give it some  */
 /* personality for services like Google.    */
 
-function beta_set_header($option,$url=false){
+function bcSOFF_set_header($option,$url=false){
     
 	// check the protocol
     if ( $_SERVER['SERVER_PROTOCOL'] === 'HTTP/1.1' ) {
@@ -34,31 +34,31 @@ function beta_set_header($option,$url=false){
 /* ---------------------------------------- */
 /* creating the site offline functionality  */
 
-function beta_site_offline(){
+function bcSOFF_site_offline(){
 	
     // check if the option is set
-    if( get_option('beta_site_offline') == 1 ) {
-        $beta_site_uc_status = true; // site is offline so run
+    if( get_option('bcSOFF_site_offline') == 1 ) {
+        $bcSOFF_site_uc_status = true; // site is offline so run
     }else{
-        $beta_site_uc_status = false; // site is online so not run
+        $bcSOFF_site_uc_status = false; // site is online so not run
     }
     
     // check if the user is logged in
     if( current_user_can('editor') || current_user_can('administrator') ) {
-        $beta_site_uc_loggedin = true; // user is logged in AND and administrator or editor
+        $bcSOFF_site_uc_loggedin = true; // user is logged in AND and administrator or editor
     }else{
-        $beta_site_uc_loggedin = false; // not logged in, so visitor
+        $bcSOFF_site_uc_loggedin = false; // not logged in, so visitor
     }
     
     // here it all comes together: is the status OFFLINE and loggedin TRUE?
-    if ($beta_site_uc_status == true AND $beta_site_uc_loggedin == false){   
+    if ($bcSOFF_site_uc_status == true AND $bcSOFF_site_uc_loggedin == false){   
 
-        beta_set_header(get_option('beta_site_header')); // send along header information
+        bcSOFF_set_header(get_option('bcSOFF_site_header')); // send along header information
 
-		if (get_option( 'beta_offline_redirect' )==1){
+		if (get_option( 'bcSOFF_offline_redirect' )==1){
 			
 			// when the user wants a redirect...
-			header( 'Location: '.get_option( 'beta_offline_redirect_url' ) );
+			header( 'Location: '.get_option( 'bcSOFF_offline_redirect_url' ) );
 			
         }else{
 			
@@ -72,16 +72,16 @@ function beta_site_offline(){
     }
 
 }
-if ( ! is_admin() && ! is_login_page() ) {
+if ( ! is_admin() && ! bcSOFF_is_login_page() ) {
 
 	// if someone is not an admin or not on the login page, add this action!
-	add_action('init', 'beta_site_offline');
+	add_action('init', 'bcSOFF_site_offline');
 	
 }
 
 
 // quick check if we are on a login page
-function is_login_page() {
+function bcSOFF_is_login_page() {
 	
     return in_array($GLOBALS['pagenow'], array('wp-login.php', 'wp-register.php'));
 	
@@ -90,7 +90,7 @@ function is_login_page() {
 /* ---------------------------------------- */
 /* Fetch image information by ID            */
 
-function beta_get_image($img_ID){
+function bcSOFF_get_image($img_ID){
 	
 	
 	$imgid = (isset( $img_ID )) ? $img_ID : "";

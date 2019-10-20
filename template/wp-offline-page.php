@@ -1,20 +1,20 @@
 <?php
 
-	if (get_option( 'beta_offline_background_image' )!=0 OR get_option( 'beta_offline_background_image' )!=''){
-		$background_image = ' style="background-image: url('.beta_get_image(get_option( 'beta_offline_background_image' )).');"';
+	if (get_option( 'bcSOFF_offline_background_image' )!=0 OR get_option( 'bcSOFF_offline_background_image' )!=''){
+		$background_image = ' style="background-image: url('.bcSOFF_get_image(get_option( 'bcSOFF_offline_background_image' )).');"';
 	}else{
 		$background_image = "";
 	}
 
-	if (get_option( 'beta_offline_logo' )!=0){
-		$logo_image = '<img src="'.beta_get_image(get_option( 'beta_offline_logo' )).'" class="beta_offline_logo" alt="'.get_bloginfo('name').'" />';
+	if (get_option( 'bcSOFF_offline_logo' )!=0){
+		$logo_image = '<img src="'.bcSOFF_get_image(get_option( 'bcSOFF_offline_logo' )).'" class="bcSOFF_offline_logo" alt="'.get_bloginfo('name').'" />';
 	}else{
 		$logo_image = "";
 	}
 
-	$message_html = get_option( 'beta_offline_message' );
-	$message_css = get_option( 'beta_offline_css' );
-	$beta_label = get_option( 'beta_offline_label' );
+	$message_html = get_option( 'bcSOFF_offline_message' );
+	$message_css = get_option( 'bcSOFF_offline_css' );
+	$bcSOFF_label = get_option( 'bcSOFF_offline_label' );
 
 ?>
 <html>
@@ -29,14 +29,14 @@
 	</style>
 	<body class="betaplugin">
 		
-		<div id="beta_container"<?php echo $background_image; ?>>
-			<div class="beta_message_box_wrapper">
-				<div class="beta_message_box">
+		<div id="bcSOFF_container"<?php echo $background_image; ?>>
+			<div class="bcSOFF_message_box_wrapper">
+				<div class="bcSOFF_message_box">
 					<?php echo $logo_image; ?>
 					<?php echo $message_html; ?>
 				</div>
-				<?php if ($beta_label==0){ ?>
-				<p class="beta_label">Powered by <a href="https://wordpress.org" target="_blank" rel="nofollow">Wordpress</a> and <a href="https://betacore.tech/super-simple-site-offline-wordpress-plugin/" target="_blank" rel="nofollow">Simple Site Offline</a></p>
+				<?php if ($bcSOFF_label==0){ ?>
+				<p class="bcSOFF_label">Powered by <a href="https://wordpress.org" target="_blank" rel="nofollow">Wordpress</a> and <a href="https://betacore.tech/super-simple-site-offline-wordpress-plugin/" target="_blank" rel="nofollow">Simple Site Offline</a></p>
 				<?php } ?>
 			</div>
 		</div>

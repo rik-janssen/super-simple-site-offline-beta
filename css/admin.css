@@ -4,7 +4,7 @@
 
 /* the form styles */
 
-.beta_thumbnail{
+.bcSOFF_thumbnail{
 	padding: 10px;
 	border: 1px solid #DAE1E7;
 	background-color: #fff;
@@ -16,7 +16,7 @@
 
 }
 
-.beta_thumbnail img{
+.bcSOFF_thumbnail img{
 	border: 1px solid #CDD2D8;
 	background-color: #fff;
 	border-radius: 2px;
@@ -24,7 +24,7 @@
 	margin-right: 10px;
 }
 
-.beta_thumbnail p{
+.bcSOFF_thumbnail p{
 	margin: 0px !important;
 	padding: 0px !important;
 	line-height: 19px;
@@ -32,7 +32,7 @@
 
 /* the plugin page footer */
 
-.beta_offline_footer{
+.bcSOFF_offline_footer{
 	overflow: hidden;
 	margin-top: 50px;
 	padding-top: 25px;
@@ -41,42 +41,42 @@
 	color: #888 !important;
 }
 
-.beta_offline_footer a{
+.bcSOFF_offline_footer a{
 	display: inline-block;
 	margin-right: 40px;
 	float: left;
 	color: #272727;
 }
 
-.beta_offline_footer a:hover{
+.bcSOFF_offline_footer a:hover{
 	color: #68A8F5;
 }
 
 
-.beta_offline_footer a img{
+.bcSOFF_offline_footer a img{
 	max-width: 80px;
 }
 
-.beta_offline_footer h2,
-.beta_offline_footer p{
+.bcSOFF_offline_footer h2,
+.bcSOFF_offline_footer p{
 	margin: 0px;
 	padding: 0px;
 	padding-top: 5px;
 	color: #313131 !important;
 }
 
-.beta_donate{
+.bcSOFF_donate{
 	float: right;
 }
 
 /* the admin bar label */
 
-li.beta_offline a.ab-item{
+li.bcSOFF_offline a.ab-item{
 	background-color: #0088C9 !important;
 	color: #fff !important;
 }
 
-li.beta_offline a.ab-item:hover{
+li.bcSOFF_offline a.ab-item:hover{
 	background-color: #F15A29 !important;
 	color: #fff !important;
 }
