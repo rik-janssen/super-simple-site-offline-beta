@@ -67,8 +67,7 @@
 				$select_vars = array( 'name'=>'offline_theme',
 									 'options'=>array(
 													array('op_name'=>'Classic Light', 'op_value'=>'0'),
-													array('op_name'=>'Classic Dark', 'op_value'=>'classic_dark'),
-													array('op_name'=>'Bouncy Elements', 'op_value'=>'bouncy_elements')
+													array('op_name'=>'Classic Dark', 'op_value'=>'classic_dark')
 													),
 									 'selected'=>get_option('bcSOFF_offline_theme')
 								   );
@@ -205,7 +204,7 @@
                     <?php _e("Show this plugin some love", 'betaoffline'); ?>
                 </th>
                  <td>
-					<a href="#">Write a review</a> | <a href="#">Rate this plugin</a>
+					<a href="https://wordpress.org/plugins/super-simple-site-offline-beta/"><?php _e('Write a review and rate this plugin','betaoffline'); ?></a>
                 </td>
             </tr> 
         </table>
