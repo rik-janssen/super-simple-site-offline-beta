@@ -36,9 +36,10 @@ No. The entire thing is free and it will be in the future.
 To answer to foo bar dilemma. We still don't know how the foo hit the bar. But 42 is always the answer as far as I'm concerned.
 
 == Screenshots ==
-1. Hide your website temporarily for the outside world.
-2. Some of the options you can work with all neatly tucked away under the settings tab.
-3. If you want a background image, no problem! Branding is really simple.
+1. Some of the options you can work with all neatly tucked away under the settings tab.
+2. Even some custom CSS, and header information and Google Analytics/Google Tag Manager magic is possible.
+3. Select your logo and enjoy a classic Wordpress view.
+4. If you want a background image, no problem! Branding is really simple.
 
 == Changelog ==
 = 1.0 =
