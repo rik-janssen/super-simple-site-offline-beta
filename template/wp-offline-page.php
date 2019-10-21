@@ -15,20 +15,24 @@
 	$message_html = get_option( 'bcSOFF_offline_message' );
 	$message_css = get_option( 'bcSOFF_offline_css' );
 	$bcSOFF_label = get_option( 'bcSOFF_offline_label' );
-
+    $bcSOFF_theme = get_option( 'bcSOFF_offline_theme' );
+    if ($bcSOFF_theme=='classic_dark'){ $bcSOFF_theme = '-classic_dark'; }
+    elseif ($bcSOFF_theme=='bouncy_elements'){ $bcSOFF_theme = '-bouncy_elements'; }
+    else{ $bcSOFF_theme = ''; }
 ?>
 <html>
 	<title><?php echo get_bloginfo( 'name' ); ?> - <?php _e('Maintenance mode.', 'betaoffline'); ?></title>   
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 	<meta name="robots" content="noindex,nofollow">
-	<link rel="stylesheet" id="beta-admin-css" href="<?php echo plugin_dir_url( __DIR__ ); ?>css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="beta-admin-css" href="<?php echo plugin_dir_url( __DIR__ ); ?>css/style<?php echo $bcSOFF_theme; ?>.css" type="text/css" media="all" />    
+    <?php bcSOFF_tracking_tags('top'); ?>
 	<style>
 		<?php echo $message_css; ?>
 	</style>
 	<body class="betaplugin">
-		
+		<?php bcSOFF_tracking_tags('body'); ?>
 		<div id="bcSOFF_container"<?php echo $background_image; ?>>
 			<div class="bcSOFF_message_box_wrapper">
 				<div class="bcSOFF_message_box">

@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/donate/?token=y9x2_N0_18pSbdHE9l9jivsqB3aTKg
 Requires at least: 5.2
 Tested up to: 5.2.4
 Requires PHP: 5.8
-Stable tag: 0.9
+Stable tag: 1.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -30,10 +30,10 @@ Super Simple Site Offline contains the following features:
 Oh yes it sure can! The best redirect you've ever seen.
 
 = Is half of it unusable because I have to pay? =
-No. The entire thing is free.
+No. The entire thing is free and it will be in the future.
 
 = What about foo bar? =
-Answer to foo bar dilemma. We still don't know how the foo hit the bar. But 42 is always the answer as far as I'm concerned.
+To answer to foo bar dilemma. We still don't know how the foo hit the bar. But 42 is always the answer as far as I'm concerned.
 
 == Screenshots ==
 1. Hide your website temporarily for the outside world.
@@ -41,6 +41,13 @@ Answer to foo bar dilemma. We still don't know how the foo hit the bar. But 42 i
 3. If you want a background image, no problem! Branding is really simple.
 
 == Changelog ==
+= 1.0 =
+The full release!
+* Added different themes for the offline page.
+* A preview button so you can check it out when you are logged in.
+* Google Analytics or Tagmanager code.
+* Added the classes to the CSS edit box for your convenience.
+
 = 0.9 =
 * Some stylesheet fixes for when the plugin is not activated.
 * Changed a couple of labels on the admin -> settings -> offline page to make it neater and more convenient.
