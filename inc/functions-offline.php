@@ -73,11 +73,12 @@ function bcSOFF_site_offline(){
         die(); // and make sure nothing is following this page
         
     }
-    
-    if($_GET['preview_offline']==true){
-         
-            include plugin_dir_path( __DIR__ ).'template/wp-offline-page.php';
-            die(); // and make sure nothing is following this page
+    if(isset($_GET['preview_offline'])){
+        if($_GET['preview_offline']==true){
+
+                include plugin_dir_path( __DIR__ ).'template/wp-offline-page.php';
+                die(); // and make sure nothing is following this page
+        }
     }
 
 }
