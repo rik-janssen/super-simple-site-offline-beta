@@ -13,6 +13,7 @@ if (!defined('WP_UNINSTALL_PLUGIN')) {
 	delete_option( 'bcSOFF_offline_message' );
 	delete_option( 'bcSOFF_offline_css' );
 	delete_option( 'bcSOFF_offline_label' );
-
+	delete_option( 'bcSOFF_offline_theme' );
+	delete_option( 'bcSOFF_offline_analytics' );
 }
 ?>

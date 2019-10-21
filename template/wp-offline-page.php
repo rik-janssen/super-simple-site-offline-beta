@@ -39,8 +39,8 @@
 					<?php echo $logo_image; ?>
 					<?php echo $message_html; ?>
 				</div>
-				<?php if ($bcSOFF_label==0){ ?>
-				<p class="bcSOFF_label">Powered by <a href="https://wordpress.org" target="_blank" rel="nofollow">Wordpress</a> and <a href="https://betacore.tech/super-simple-site-offline-wordpress-plugin/" target="_blank" rel="nofollow">Simple Site Offline</a></p>
+				<?php if ($bcSOFF_label==1){ ?>
+				<p class="bcSOFF_label">Powered by <a href="https://wordpress.org" target="_blank" rel="nofollow">Wordpress</a> and <a href="https://betacore.tech/super-simple-site-offline-wordpress-plugin/" target="_blank" rel="nofollow">Simple Site Offline</a>.</p>
 				<?php } ?>
 			</div>
 		</div>

@@ -204,7 +204,7 @@
                     <?php _e("Show this plugin some love", 'betaoffline'); ?>
                 </th>
                  <td>
-					<a href="https://wordpress.org/plugins/super-simple-site-offline-beta/"><?php _e('Write a review and rate this plugin','betaoffline'); ?></a>
+					<a href="https://wordpress.org/plugins/super-simple-site-offline-beta/" target="_blank"><?php _e('Write a review and rate this plugin.','betaoffline'); ?></a>
                 </td>
             </tr> 
         </table>
