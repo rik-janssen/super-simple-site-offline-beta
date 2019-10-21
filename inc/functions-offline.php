@@ -109,6 +109,10 @@ function bcSOFF_get_image($img_ID){
 	
 }
 
+
+/* ---------------------------------------- */
+/* The Tracking tag for GA and TM           */
+
 function bcSOFF_tracking_tags($location='top'){
     
     $the_google_id = substr(get_option( 'bcSOFF_offline_analytics' ), 0,16);
