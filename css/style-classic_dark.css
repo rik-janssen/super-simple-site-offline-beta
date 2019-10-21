@@ -19,6 +19,7 @@ body.betaplugin{
 	margin: 0px;
 	padding: 0px;
 	padding-top: 17vh;
+	box-sizing: border-box;
 }
 
 #bcSOFF_container .bcSOFF_message_box_wrapper{
@@ -26,6 +27,7 @@ body.betaplugin{
 	max-width: 600px;
 	margin: 0 auto;
 	padding: 20px;
+	box-sizing: border-box;
 }
 
 #bcSOFF_container .bcSOFF_message_box{
@@ -35,6 +37,7 @@ body.betaplugin{
 	border: 1px solid #2E353C;
 	border-radius: 2px;
 	text-align: center;
+	box-sizing: border-box;
 }
 
 #bcSOFF_container img.bcSOFF_offline_logo{
@@ -54,6 +57,7 @@ p.bcSOFF_label{
 	font-size: 13px;
 	text-align: right;
 	color: #414141;
+	box-sizing: border-box;
 }
 
 #bcSOFF_container a{

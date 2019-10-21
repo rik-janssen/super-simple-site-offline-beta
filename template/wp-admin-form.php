@@ -18,7 +18,9 @@
 						   );
 		
 		bcSOFF_check_input($check_vars, 'By checking this box your website will display an offline message for the outside world and Google bots while you can still view your website when logged in as admin or editor.'); ?>
-                     <p><strong><a href="<?php echo get_home_url(); ?>/?preview_offline=true" target="_blank"><?php _e('Preview the landingpage in offline mode','betaoffline'); ?></a></strong></p>
+                     <?php if(get_option('bcSOFF_site_offline')==1){ ?>
+					 <p><strong><a href="<?php echo get_home_url(); ?>/?preview_offline=true" target="_blank"><?php _e('Preview the landingpage in offline mode','betaoffline'); ?></a></strong></p>
+					 <?php } ?>
                 </td>
             </tr> 
 		</table>
