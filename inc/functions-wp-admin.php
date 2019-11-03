@@ -3,20 +3,20 @@
 /* adding the stylesheet to WP-admin */
 
 function bcSOFF_offline_admin() {
-  wp_enqueue_style('beta-admin', plugin_dir_url( __DIR__ ).'css/admin.css');
+  wp_enqueue_style('beta-offline', plugin_dir_url( __DIR__ ).'css/admin.css');
 }
 add_action('admin_enqueue_scripts', 'bcSOFF_offline_admin');
 
 
 /* ---------------------------------------- */
 /* adding the stylesheet to the frontend */
-
+/*
 function bcSOFF_offline_frontend() {
 	if (!is_admin()){
-	  wp_enqueue_style('beta-admin', plugin_dir_url( __DIR__ ).'css/style.css');
+	  wp_enqueue_style('beta-offline', plugin_dir_url( __DIR__ ).'css/style.css');
 	}
 }
-add_action('wp_enqueue_scripts', 'bcSOFF_offline_frontend',100);
+add_action('wp_enqueue_scripts', 'bcSOFF_offline_frontend',100);*/
 
 
 /* ---------------------------------------- */
