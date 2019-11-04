@@ -1,0 +1,171 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Super Simple Site Offline | Beta\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-04 15:19+0000\n"
+"PO-Revision-Date: 2019-11-04 15:19+0000\n"
+"Last-Translator: rik <rik@commpanion.nl>\n"
+"Language-Team: \n"
+"Language: nl_NL\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.1; wp-5.2.4"
+
+#: template/wp-admin-form.php:103
+msgid ""
+" is under construction at the moment.</h1>\n"
+"<p>Sorry for the inconvenience. Please return to this website at a later "
+"point. Thank you!</p>"
+msgstr ""
+
+#: template/wp-admin-form.php:150
+msgid "Analytics and headers"
+msgstr ""
+
+#: template/wp-admin-form.php:117
+msgid "Background image"
+msgstr ""
+
+#. Author of the plugin
+msgid "Beta"
+msgstr ""
+
+#: template/wp-admin-form.php:61
+msgid "Display options"
+msgstr ""
+
+#: template/wp-admin-form.php:32
+msgid "Enable Redirect"
+msgstr ""
+
+#: template/wp-admin-form.php:11
+msgid "Enable Site Offline"
+msgstr ""
+
+#: template/wp-admin-form.php:168
+msgid ""
+"Give browsers and Google more information about your intentions behind the "
+"offline page and/or the redirect you have set up."
+msgstr ""
+
+#: template/wp-admin-form.php:173
+msgid "Google Analytics or Google Tagmanager"
+msgstr ""
+
+#: template/wp-admin-form.php:154
+msgid "Header information"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Hide or redirect your website in an instant! The Super Simple Site Offline "
+"Plugin does exactly that and is above all easy to customise."
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://betacore.tech/"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://betacore.tech/super-simple-site-offline-wordpress-plugin/"
+msgstr ""
+
+#: template/wp-admin-form.php:56
+msgid ""
+"If redirect is enabled this is the location where visitors are forwarded to."
+msgstr ""
+
+#: template/wp-admin-form.php:133
+msgid ""
+"If you like to change some things on the homepage, use this CSS box to do so."
+" You will not lose changes when this plugin is updated."
+msgstr ""
+
+#: template/wp-admin-form.php:83
+msgid "Logo"
+msgstr ""
+
+#: template/wp-offline-page.php:24
+msgid "Maintenance mode."
+msgstr ""
+
+#: inc/functions-wp-admin.php:209
+msgid "Media library"
+msgstr ""
+
+#: template/wp-admin-form.php:182
+msgid ""
+"Paste your GTM or UA tracking ID here so you can use Google Analytics or "
+"Google Tagmanager on your offline page. Leave empty if you don't want to "
+"track the visitors."
+msgstr ""
+
+#: template/wp-admin-form.php:22
+msgid "Preview the landingpage in offline mode"
+msgstr ""
+
+#: template/wp-admin-form.php:28
+msgid "Redirect"
+msgstr ""
+
+#: template/wp-admin-form.php:47
+msgid "Redirect URL"
+msgstr ""
+
+#: inc/functions-wp-admin.php:196
+msgid "Select a new image or paste a image ID to replace the one above:"
+msgstr ""
+
+#: inc/functions-wp-admin.php:199
+msgid "Select an image or paste an image ID:"
+msgstr ""
+
+#: template/wp-admin-form.php:78
+msgid "Select the theme you'd like to display on the frontpage."
+msgstr ""
+
+#: template/wp-admin-form.php:65
+msgid "Select theme"
+msgstr ""
+
+#: template/wp-admin-form.php:191
+msgid "Show the Beta Label"
+msgstr ""
+
+#: template/wp-admin-form.php:206
+msgid "Show this plugin some love"
+msgstr ""
+
+#: template/wp-admin-form.php:130
+msgid "Some custom CSS"
+msgstr ""
+
+#. Name of the plugin
+msgid "Super Simple Site Offline | Beta"
+msgstr ""
+
+#: template/wp-admin-form.php:187
+msgid "Support Beta"
+msgstr ""
+
+#: inc/functions-wp-admin.php:194
+msgid "The currently selected image."
+msgstr ""
+
+#: template/wp-admin-form.php:96
+msgid "The message people see"
+msgstr ""
+
+#: template/wp-admin-form.php:99
+msgid ""
+"Write a message for the people that visit your site when offline mode is "
+"enabled. You can use HTML in this field but no javascript. If you like to "
+"return to the original message, just empty this field and save."
+msgstr ""
+
+#: template/wp-admin-form.php:209
+msgid "Write a review and rate this plugin."
+msgstr ""
