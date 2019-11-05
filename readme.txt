@@ -1,6 +1,6 @@
 === Super Simple Site Offline ===
 Contributors: Rik Janssen
-Tags: offline mode, under construction, redirect, blackout, work in progress, forward, header, offline
+Tags: offline mode, under construction, redirect
 Donate link: https://www.paypal.com/donate/?token=y9x2_N0_18pSbdHE9l9jivsqB3aTKgWQ3qGgxg_t6VUUmSU6B2H1hUcANUBzhX5xV0qg2G&country.x=NL&locale.x=NL
 Requires at least: 5.2
 Tested up to: 5.2.4
