@@ -37,7 +37,7 @@
 			<div class="bcSOFF_message_box_wrapper">
 				<div class="bcSOFF_message_box">
 					<?php echo $logo_image; ?>
-					<?php echo $message_html; ?>
+					<?php echo esc_html($message_html); ?>
 				</div>
 				<?php if ($bcSOFF_label==1){ ?>
 				<p class="bcSOFF_label">Powered by <a href="https://wordpress.org" target="_blank" rel="nofollow">Wordpress</a> and <a href="https://betacore.tech/super-simple-site-offline-wordpress-plugin/" target="_blank" rel="nofollow">Simple Site Offline</a>.</p>
