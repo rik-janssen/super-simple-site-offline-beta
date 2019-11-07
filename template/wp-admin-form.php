@@ -256,7 +256,7 @@ $get_slug = explode('/', plugin_basename( __FILE__ ));
             if($get_slug[0] != $bc_value['slug']){
         ?>
             <li>
-                <img src="https://ps.w.org/<?php echo $bc_value['slug']; ?>/assets/icon-256x256.jpg" title="<?php echo $bc_value['name']; ?> by Beta" class="bcALG_icon" />
+                <img src="<?php echo plugin_dir_url( __DIR__ ).'img/'.$bc_value['slug'].'.jpg'; ?>" title="<?php echo $bc_value['name']; ?> by Beta" class="bcALG_icon" />
                 <h3><a href="https://wordpress.org/plugins/super-simple-site-offline-beta/" target="_blank"><?php echo $bc_value['name']; ?></a></h3>
                 <p><?php echo $bc_value['content']; ?></p>
                 <a href="https://wordpress.org/plugins/<?php echo $bc_value['slug']; ?>/" class="button" target="_blank"><?php _e('Plugin page'); ?></a>
@@ -265,12 +265,7 @@ $get_slug = explode('/', plugin_basename( __FILE__ ));
     
         <?php }} ?>
     </ul>
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
+
     <div class="bcALG_mailinglist">
         <form action="https://oneweekendwebsite.us20.list-manage.com/subscribe/post?u=72e22e9c5e66e05351f6c92af&amp;id=87b9e508b0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <h2>Are you running Wordpress inefficient? <span>Betacore is developing plugins to fix that!</span></h2>
