@@ -18,6 +18,8 @@
     $bcSOFF_theme = get_option( 'bcSOFF_offline_theme' );
     if ($bcSOFF_theme=='classic_dark'){ $bcSOFF_theme = '-classic_dark'; }
     elseif ($bcSOFF_theme=='bouncy_elements'){ $bcSOFF_theme = '-bouncy_elements'; }
+    elseif ($bcSOFF_theme=='bar'){ $bcSOFF_theme = '-bar'; }
+    elseif ($bcSOFF_theme=='dot'){ $bcSOFF_theme = '-dot'; }
     else{ $bcSOFF_theme = ''; }
 ?>
 <html>
@@ -35,13 +37,17 @@
 		<?php bcSOFF_tracking_tags('body'); ?>
 		<div id="bcSOFF_container"<?php echo $background_image; ?>>
 			<div class="bcSOFF_message_box_wrapper">
+                
 				<div class="bcSOFF_message_box">
+                    <div class="bcSOFF_message_box_contents">
 					<?php echo $logo_image; ?>
-					<?php echo esc_html($message_html); ?>
+					<?php echo $message_html; ?>
+                        </div>
 				</div>
 				<?php if ($bcSOFF_label==1){ ?>
 				<p class="bcSOFF_label">Powered by <a href="https://wordpress.org" target="_blank" rel="nofollow">Wordpress</a> and <a href="https://betacore.tech/super-simple-site-offline-wordpress-plugin/" target="_blank" rel="nofollow">Simple Site Offline</a>.</p>
 				<?php } ?>
+                
 			</div>
 		</div>
 

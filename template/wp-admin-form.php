@@ -69,7 +69,9 @@
 				$select_vars = array( 'name'=>'offline_theme',
 									 'options'=>array(
 													array('op_name'=>'Classic Light', 'op_value'=>'0'),
-													array('op_name'=>'Classic Dark', 'op_value'=>'classic_dark')
+													array('op_name'=>'Classic Dark', 'op_value'=>'classic_dark'),
+                                                    array('op_name'=>'Dark Horisontal Bar', 'op_value'=>'bar'),
+                                                    array('op_name'=>'Centered Dot', 'op_value'=>'dot'),
 													),
 									 'selected'=>get_option('bcSOFF_offline_theme')
 								   );

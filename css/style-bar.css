@@ -1,5 +1,5 @@
 body.betaplugin{
-	background-color: #f1f1f1;
+	background-color: #5890B9;
 	margin: 0px;
 	padding: 0px;
 	font-family: "Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
@@ -18,30 +18,30 @@ body.betaplugin{
     object-fit: cover;
 	margin: 0px;
 	padding: 0px;
-	padding-top: 17vh;
 	box-sizing: border-box;
+	display: flex;
+	align-items: center;
 }
 
 #bcSOFF_container .bcSOFF_message_box_wrapper{
 	width: 100%;
-	max-width: 600px;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 0px;
 	box-sizing: border-box;
-}
-
-bcSOFF_container .bcSOFF_message_box_contents{
     
 }
 
 #bcSOFF_container .bcSOFF_message_box{
-	background-color: rgba(255,255,255,0.85);
+	background-color: rgba(0,0,0,0.85);
 	padding: 40px;
 	width: 100%;
-	border: 1px solid #94A0AC;
-	border-radius: 2px;
 	text-align: center;
 	box-sizing: border-box;
+}
+
+#bcSOFF_container .bcSOFF_message_box_contents{
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 #bcSOFF_container img.bcSOFF_offline_logo{
@@ -54,22 +54,24 @@ bcSOFF_container .bcSOFF_message_box_contents{
 #bcSOFF_container h4, 
 #bcSOFF_container h5, 
 #bcSOFF_container p{
-	color: #3A424A;	
+	color: #DEDEDE;	
 }
 
-p.bcSOFF_label{
+p.bcSOFF_label,
+p.bcSOFF_label a,
+p.bcSOFF_label a:hover{
 	font-size: 13px;
-	text-align: right;
-	color: #979797;
+	text-align: center !important;
+	color: #DEDEDE !important;
 }
 
 #bcSOFF_container a{
-	color: #0073aa;
+	color: #eee;
 	text-decoration: underline;
 }
 
 #bcSOFF_container a:hover{
-	color: #0088C9;
+	color: #ddd;
 	text-decoration: underline;
 }
 
