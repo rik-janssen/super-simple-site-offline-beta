@@ -32,6 +32,4 @@ function bcSOFF_pl_links( $links ) {
 }
 
 add_action( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'bcSOFF_pl_links' );
-
-// features nog toevoegen aan naam regel-> plugin pagina op site
 ?>
