@@ -1,9 +1,9 @@
 <?php 
 /**
-* Plugin Name: Super Simple Site Offline | Beta
-* Plugin URI: https://betacore.tech/super-simple-site-offline-wordpress-plugin/
-* Description:  Hide or redirect your website in an instant! The Super Simple Site Offline Plugin does exactly that and is above all easy to customise. Works with Wordpress 5.3 Kirk.
-* Version: 1.3.5
+* Plugin Name: Super Simple Site Offline
+* Plugin URI: https://betacore.tech/plugins/super-simple-site-offline-for-wordpress/
+* Description:  Hide or redirect your website in an instant! The Super Simple Site Offline Plugin does exactly that and is above all easy to customize. Works with Wordpress 5.3 Kirk.
+* Version: 1.4
 * Author: Beta
 * Author URI: https://betacore.tech/
 * Text Domain: betaoffline
@@ -16,5 +16,22 @@ include_once('inc/functions-wp-admin.php'); // the wp-admin navigation
 include_once('inc/functions-offline.php'); // offline mode stuff
 
 
+/* make the plugin page row better */
 
+function bcSOFF_pl_links( $links ) {
+
+	$links = array_merge( array(
+		'<a href="' . esc_url( 'https://www.paypal.com/donate/?token=y9x2_N0_18pSbdHE9l9jivsqB3aTKgWQ3qGgxg_t6VUUmSU6B2H1hUcANUBzhX5xV0qg2G&country.x=NL&locale.x=NL' ) . '">' . __( 'Donate', 'betaoffline' ) . '</a>'
+    ), $links );
+
+    $links = array_merge( array(
+		'<a href="' . esc_url( admin_url( '/options-general.php?page=bcSOFF_offline_settings' ) ) . '">' . __( 'Offline', 'betaoffline' ) . '</a>'
+    ), $links );
+    
+	return $links;
+}
+
+add_action( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'bcSOFF_pl_links' );
+
+// features nog toevoegen aan naam regel-> plugin pagina op site
 ?>

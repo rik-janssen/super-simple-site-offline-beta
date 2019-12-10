@@ -29,6 +29,9 @@ Super Simple Site Offline contains the following features:
 = Can it do a redirect? =
 Oh yes it sure can! The best redirect you've ever seen.
 
+= How customisable is it? =
+At the moment you can edit the background image, logo, text and css. Custom HTML will be a future feature. But for now it's perfect as a quick and simple solution.
+
 = Is half of it unusable because I have to pay? =
 No. The entire thing is free and it will be in the future.
 
@@ -42,6 +45,9 @@ To answer to foo bar dilemma. We still don't know how the foo hit the bar. But 4
 4. If you want a background image, no problem! Branding is really simple.
 
 == Changelog ==
+= 1.4 =
+* Some small fixes and new artwork
+
 = 1.3.5 =
 * Wordpress 5.3 ready and tested
 
@@ -74,5 +80,8 @@ The full release!
 * Lots and lots of updates that happened on my own server but didn't take the time to write them down.
 
 == Upgrade Notice ==
+= 1.4 =
+* This is the most stable version of the plugin so far.
+
 = 0.8 =
 * Some improved functions since the previous versions.
