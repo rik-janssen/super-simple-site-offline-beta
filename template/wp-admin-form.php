@@ -225,6 +225,11 @@
 
 $bcALG_my_plugins = array(
                 array(
+                    'slug'=>'rebranded-pro-the-agency-toolkit',
+                    'name'=>'Re:Branded Pro | The Agency Toolkit',
+                    'features'=>'https://betacore.tech/plugins/rebranded-pro-agency-toolkit/',
+                    'content'=>'This is a total rebranding package for the WordPress admin built for for agencies, designers and website builders. This plugin also protects essential parts of the WordPress installation in order to create an awesome user experience for the client on the WP-admin dashboard. My other plugins (Super Simple Age Gate, Super Simple Site Offline, Simple Analytics Tag) hook right in! So it feels as if they are part of Re:Branded. Or are they?' ),
+                array(
                     'slug'=>'super-simple-site-offline-beta',
                     'name'=>'Super Simple Site Offline',
                     'features'=>'https://betacore.tech/plugins/super-simple-site-offline-for-wordpress/',

@@ -152,6 +152,4 @@ function bcSOFF_tracking_tags($location='top'){
         <?php
     }
 }
-
-
-
+?>

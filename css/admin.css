@@ -72,10 +72,31 @@ ul.bcALG_plugins li{
 	border-radius: 3px;
 }
 
+ul.bcALG_plugins li:first-child{
+	padding: 20px;
+	background-color: #464646;
+	border: 3px solid #494949;
+	border-radius: 3px;
+	grid-column-start: 1; 
+  	grid-column-end: 3; 
+}
+
 ul.bcALG_plugins li h3{
 	margin: 0px;
 	padding: 0px;
 	margin-bottom: 15px;
+}
+
+ul.bcALG_plugins li:first-child h3{
+	font-size: 23px;
+	font-weight: lighter;
+	padding: 10px 0px;
+}
+
+ul.bcALG_plugins li:first-child h3 a,
+ul.bcALG_plugins li:first-child p{
+	color: #fff !important;
+	text-decoration: none;
 }
 
 .bcALG_mailinglist{

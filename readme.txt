@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/donate/?token=y9x2_N0_18pSbdHE9l9jivsqB3aTKg
 Requires at least: 5.2
 Tested up to: 5.3
 Requires PHP: 5.8
-Stable tag: 1.3.5
+Stable tag: 1.6.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -45,6 +45,10 @@ To answer to foo bar dilemma. We still don't know how the foo hit the bar. But 4
 4. If you want a background image, no problem! Branding is really simple.
 
 == Changelog ==
+= 1.6 and 1.6.1=
+* Problem solved with open ended php files (gave errors at header level)
+* Problem solved with some style and image files.
+
 = 1.4 =
 * Some small fixes and new artwork
 
