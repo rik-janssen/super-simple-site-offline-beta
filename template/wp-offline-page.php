@@ -19,6 +19,7 @@
     if ($bcSOFF_theme=='classic_dark'){ $bcSOFF_theme = '-classic_dark'; }
     elseif ($bcSOFF_theme=='bouncy_elements'){ $bcSOFF_theme = '-bouncy_elements'; }
     elseif ($bcSOFF_theme=='bar'){ $bcSOFF_theme = '-bar'; }
+    elseif ($bcSOFF_theme=='bar_light'){ $bcSOFF_theme = '-bar_light'; }
     elseif ($bcSOFF_theme=='dot'){ $bcSOFF_theme = '-dot'; }
     else{ $bcSOFF_theme = ''; }
 ?>
@@ -45,7 +46,7 @@
                         </div>
 				</div>
 				<?php if ($bcSOFF_label==1){ ?>
-				<p class="bcSOFF_label">Powered by <a href="https://wordpress.org" target="_blank" rel="nofollow">Wordpress</a> and <a href="https://betacore.tech/super-simple-site-offline-wordpress-plugin/" target="_blank" rel="nofollow">Simple Site Offline</a>.</p>
+				<p class="bcSOFF_label">Powered by <a href="https://wordpress.org" target="_blank" rel="nofollow">Wordpress</a> and <a href="https://betacore.tech/plugins/super-simple-site-offline-for-wordpress/" target="_blank" rel="nofollow">Simple Site Offline</a>.</p>
 				<?php } ?>
                 
 			</div>

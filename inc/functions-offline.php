@@ -19,10 +19,13 @@ function bcSOFF_set_header($option,$url=false){
 		$header = ' 307 Temporary Redirect';
 	}elseif($option==301){
 		$header = ' 301 Moved Permanently';
+	}elseif($option==404){
+		$header = ' 404 Not Found';
+	}elseif($option==200){
+		$header = ' 200 OK';
 	}
-	
+     
 	//execute the headers
-    
     header( $protocol . $header, true, $option );
 	if($url!=false){
 		header( 'Location: '.$url );

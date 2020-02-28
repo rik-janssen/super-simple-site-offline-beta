@@ -70,7 +70,8 @@
 									 'options'=>array(
 													array('op_name'=>'Classic Light', 'op_value'=>'0'),
 													array('op_name'=>'Classic Dark', 'op_value'=>'classic_dark'),
-                                                    array('op_name'=>'Dark Horisontal Bar', 'op_value'=>'bar'),
+                                                    array('op_name'=>'Dark Horizontal Bar', 'op_value'=>'bar'),
+                                                    array('op_name'=>'Light Horizontal Bar', 'op_value'=>'bar_light'),
                                                     array('op_name'=>'Centered Dot', 'op_value'=>'dot'),
 													),
 									 'selected'=>get_option('bcSOFF_offline_theme')
@@ -160,8 +161,10 @@
 				$select_vars = array( 'name'=>'offline_header',
 									 'options'=>array(
 													array('op_name'=>'503 Service Unavailable', 'op_value'=>'503'),
+                                                    array('op_name'=>'404 Not Found', 'op_value'=>'404'),
 													array('op_name'=>'307 Temporary Redirect', 'op_value'=>'307'),
-													array('op_name'=>'301 Moved Permanently', 'op_value'=>'301')
+													array('op_name'=>'301 Moved Permanently', 'op_value'=>'301'),
+                                                    array('op_name'=>'200 OK', 'op_value'=>'200')
 													),
 									 'selected'=>get_option('bcSOFF_offline_header')
 								   );
@@ -222,62 +225,27 @@
 
 /* ------------------------ */
 /* THE FOOTER.              */
+$u = wp_get_current_user();
 
-$bcALG_my_plugins = array(
-    array(
-        'slug'=>'rebranded-pro-the-agency-toolkit',
-        'name'=>'Re:Branded Pro | The Agency Toolkit',
-        'features'=>'https://betacore.tech/plugins/rebranded-pro-agency-toolkit/',
-        'content'=>'This is a total rebranding package for the WordPress admin built for for agencies, designers and website builders. This plugin also protects essential parts of the WordPress installation in order to create an awesome user experience for the client on the WP-admin dashboard. My other plugins (Super Simple Age Gate, Super Simple Site Offline, Simple Analytics Tag) hook right in! So it feels as if they are part of Re:Branded. Or are they?' ),
-    array(
-        'slug'=>'super-simple-site-offline-beta',
-        'name'=>'Super Simple Site Offline',
-        'features'=>'https://betacore.tech/plugins/super-simple-site-offline-for-wordpress/',
-        'content'=>'Site offline plugins are made awesome again with this piece of code. While most site offline plugins are bulky, intrusive and annoying this one is as light as a feather and has no paid options. The nav item is neatly tucked away within the settings menu so it feels like it is part of WordPress.' ),
-    array(
-        'slug'=>'super-simple-recaptcha-v3',
-        'name'=>'Super Simple Recapthca V3',
-        'features'=>'https://betacore.tech/plugins/super-simple-recaptcha-v3/',
-        'content'=>'Got spammers? Add Recaptcha V3 in an instant! Works for any contact form. Uses Google Recaptcha V3. A how-to is included.' ),
-    array(
-        'slug'=>'simple-analytics-tag-beta',
-        'name'=>'Simple Analytics Tag',
-        'features'=>'https://betacore.tech/plugins/simple-analytics-tag-for-wordpress/',
-        'content'=>'Simple Analytics Tag helps you get up and running quick. This plugin has a non-intrusive interface and fits very well within the Wordpress Settings menu. Just paste in the ID from Google Tagmanager or Google Analytics and you are good to go.' ),
-    array(
-        'slug'=>'super-simple-age-gate-beta',
-        'name'=>'Super Simple Age Gate',
-        'features'=>'https://betacore.tech/plugins/super-simple-age-gate-for-wordpress/',
-        'content'=>"Do you have to filter out younger visitors? With this super simple age gate you'll fix those age restrictions quickly. Ment for webshops and other types of websites that has to have a curtain where people below your set age can't peek behind.." ),
-    array(
-        'slug'=>'age-checkbox-for-woocommerce',
-        'name'=>'Age Checkbox for Woocommerce',
-        'features'=>'https://betacore.tech/plugins/age-checkbox-for-woocommerce/',
-        'content'=>"Complementary to the Super Simple Age Gate this adds an additional checkbox to the checkout form so customers have to confirm that they are age 18 (you can modify the age) or up." )
-
-);
-
-// get the slug of this plugin
-$get_slug = explode('/', plugin_basename( __FILE__ ));
 ?>
 <div class="bcALG_footer">
 
     <div class="bcALG_mailinglist">
         <form action="https://oneweekendwebsite.us20.list-manage.com/subscribe/post?u=72e22e9c5e66e05351f6c92af&amp;id=87b9e508b0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <h2>Are you running Wordpress inefficient? <span>Betacore is developing plugins to fix that!</span></h2>
-            <p>Get an email when new plugins arrive! The only thing you'll have to do is subscribe to the mailing list now!</p>
+            <h2>Get an email when new plugins or important updates arrive <span>and run an efficient Wordpress site!</span></h2>
+            <p>Just subscribe to the Beta mailinglist and be informed. Don't worry, I don't like spam either but if you'd like some usefull nuggets of information in your inbox, I'd reccommend you join the list. I'm not biased at all. I know. Right?</p><br />
             <ul class="bcALG_mailingform">
                 <li>
                     
 			
-					<input type="text" value="" name="FNAME" class="" id="mce-FNAME" required>
+					<input type="text" value="<?php echo ucfirst($u->data->user_nicename); ?>" name="FNAME" class="" id="mce-FNAME" required>
 					<label for="mce-FNAME">First Name</label>
                 </li>
                 <li>
                     
                     
 					
-					<input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL" required/>
+					<input type="text" value="<?php echo $u->data->user_email; ?>" name="EMAIL" class="required email" id="mce-EMAIL" required/>
 					<label for="mce-EMAIL">Email Address</label>
                 </li>
                 <li>
@@ -292,26 +260,6 @@ $get_slug = explode('/', plugin_basename( __FILE__ ));
             </ul>
         </form>
     </div>
-<br />
-    <h2>Making Wordpress more awesome <span>with useful plugins like these...</span></h2>
-    
-    <ul class="bcALG_plugins">
-        <?php foreach($bcALG_my_plugins as $bc_id => $bc_value){ 
-            if($get_slug[0] != $bc_value['slug']){
-        ?>
-            <li>
-                <img src="<?php echo plugin_dir_url( __DIR__ ).'img/'.$bc_value['slug'].'.png'; ?>" title="<?php echo $bc_value['name']; ?> by Beta" class="bcALG_icon" />
-                <h3><a href="https://wordpress.org/plugins/<?php echo $bc_value['slug']; ?>/" target="_blank"><?php echo $bc_value['name']; ?></a></h3>
-                <p><?php echo $bc_value['content']; ?></p>
-                <a href="https://wordpress.org/plugins/<?php echo $bc_value['slug']; ?>/" class="button" target="_blank"><?php _e('Plugin page'); ?></a>
-                <?php if (isset($bc_value['features'])){ ?>
-                <a href="<?php echo $bc_value['features']; ?>" class="button" target="_blank"><?php _e('Features'); ?></a>
-                <?php } ?>
-                <a href="<?php bloginfo('wpurl'); ?>/wp-admin/plugin-install.php?tab=plugin-information&plugin=<?php echo $bc_value['slug']; ?>&TB_iframe=false" class="button button-primary" target="_blank"><?php _e('Install'); ?></a>
-            </li>
-    
-        <?php }} ?>
-    </ul>
 
 
 	<div class="bcALG_logobar">

@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/donate/?token=y9x2_N0_18pSbdHE9l9jivsqB3aTKg
 Requires at least: 5.2
 Tested up to: 5.3
 Requires PHP: 5.8
-Stable tag: 1.6.1
+Stable tag: 1.7.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -14,7 +14,7 @@ Simple Site Offline by Beta is a super simple but versatile site-offline plugin.
 == Description ==
 Site offline plugins are made awesome again with this piece of code. While most site offline plugins are bulky, intrusive and annoying this one is as light as a feather and has no paid options. The nav item is neatly tucked away within the settings menu so it feels like it is part of Wordpress.
 
-Super Simple Site Offline contains the following features:
+= Super Simple Site Offline contains the following features: =
 * Simple enable and disable button and settings page.
 * Custom background, display text and logo for the ones who have a logo.
 * A redirect option for if you want to close a site and make sure all the trafic is forwarded to the new site.
@@ -45,7 +45,14 @@ To answer to foo bar dilemma. We still don't know how the foo hit the bar. But 4
 4. If you want a background image, no problem! Branding is really simple.
 
 == Changelog ==
-= 1.6 and 1.6.1=
+
+= 1.7 - 1.7.4 = 
+* Added some headers
+* Added a documentation link
+* Added a template
+* Removed some grammar errors
+
+= 1.6 and 1.6.1 =
 * Problem solved with open ended php files (gave errors at header level)
 * Problem solved with some style and image files.
 

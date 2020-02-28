@@ -1,0 +1,104 @@
+body.betaplugin{
+	background-color: #D8E1E7;
+	margin: 0px;
+	padding: 0px;
+	font-family: "Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+#bcSOFF_container div{
+	box-sizing: border-box;
+}
+
+#bcSOFF_container{
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+}
+
+#bcSOFF_container .bcSOFF_message_box_wrapper{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px;
+	box-sizing: border-box;
+    
+}
+
+#bcSOFF_container .bcSOFF_message_box{
+	background-color: rgba(255,255,255,255.85);
+	padding: 40px;
+	width: 100%;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+#bcSOFF_container .bcSOFF_message_box_contents{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#bcSOFF_container img.bcSOFF_offline_logo{
+	max-height: 80px;
+}
+
+#bcSOFF_container h1, 
+#bcSOFF_container h2, 
+#bcSOFF_container h3, 
+#bcSOFF_container h4, 
+#bcSOFF_container h5, 
+#bcSOFF_container p{
+	color: #272727;	
+}
+
+p.bcSOFF_label,
+p.bcSOFF_label a,
+p.bcSOFF_label a:hover{
+	font-size: 13px;
+	text-align: center !important;
+	color: #272727 !important;
+}
+
+#bcSOFF_container a{
+	color: #BED4E4;
+	text-decoration: underline;
+}
+
+#bcSOFF_container a:hover{
+	color: #ddd;
+	text-decoration: underline;
+}
+
+@media only screen and (max-width:640px) {
+	
+	#bcSOFF_container{
+		padding-top: 40px;
+	}
+	
+	#bcSOFF_container .bcSOFF_message_box_wrapper{
+		width: 100%;
+		max-width: auto;
+	}
+
+	#bcSOFF_container .bcSOFF_message_box{
+		padding: 30px;
+		width: 100%;
+	}
+}
+
+/* wpadmin bar */
+li.bcSOFF_offline a.ab-item{
+	background-color: #0088C9 !important;
+	color: #fff !important;
+}
+
+li.bcSOFF_offline a.ab-item:hover{
+	background-color: #F15A29 !important;
+	color: #fff !important;
+}
