@@ -263,7 +263,7 @@ $u = wp_get_current_user();
 
 
 	<div class="bcALG_logobar">
-    <a href="https://beta-media.com/super-simple-site-gate-wordpress-plugin/"><img src="<?php echo plugin_dir_url( __DIR__ ); ?>img/betalogo-b.png" /></a>
+    <a href="https://betacore.tech"><img src="<?php echo plugin_dir_url( __DIR__ ); ?>img/betalogo-b.png" /></a>
     <p class="bcALG_url"><span>By:</span> <a href="https://www.betacore.tech" target="_blank">www.betacore.tech</a></p>
 	</div>
 </div>
