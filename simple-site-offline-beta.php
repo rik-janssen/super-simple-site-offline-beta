@@ -2,7 +2,7 @@
 /**
 * Plugin Name: Super Simple Site Offline
 * Plugin URI: https://betacore.tech/plugins/super-simple-site-offline-for-wordpress/
-* Description:  Hide or redirect your website in an instant! The Super Simple Site Offline Plugin does exactly that and is above all easy to customize. Works with Wordpress 5.3 Kirk.
+* Description:  Hide or redirect your website in an instant! The Super Simple Site Offline Plugin does exactly that and is above all easy to customize.
 * Version: 1.7.5
 * Author: Rik Janssen (Beta)
 * Author URI: https://betacore.tech/
