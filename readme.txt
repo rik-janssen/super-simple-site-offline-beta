@@ -1,7 +1,7 @@
 === Super Simple Site Offline ===
 Contributors: @betacore
 Tags: offline mode, under construction, redirect
-Donate link: https://www.paypal.com/donate/?token=y9x2_N0_18pSbdHE9l9jivsqB3aTKgWQ3qGgxg_t6VUUmSU6B2H1hUcANUBzhX5xV0qg2G&country.x=NL&locale.x=NL
+Donate link: https://betacore.tech/donate
 Requires at least: 5.2
 Tested up to: 5.3
 Requires PHP: 5.8
