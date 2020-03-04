@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/donate/?token=y9x2_N0_18pSbdHE9l9jivsqB3aTKg
 Requires at least: 5.2
 Tested up to: 5.3
 Requires PHP: 5.8
-Stable tag: 1.7.4
+Stable tag: 1.7.5
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -45,6 +45,9 @@ To answer to foo bar dilemma. We still don't know how the foo hit the bar. But 4
 4. If you want a background image, no problem! Branding is really simple.
 
 == Changelog ==
+
+= 1.7.5 =
+* Small link in footer fix
 
 = 1.7 - 1.7.4 = 
 * Added some headers
@@ -91,6 +94,7 @@ The full release!
 * Lots and lots of updates that happened on my own server but didn't take the time to write them down.
 
 == Upgrade Notice ==
+
 = 1.4 =
 * This is the most stable version of the plugin so far.
 
