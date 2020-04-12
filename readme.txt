@@ -1,15 +1,15 @@
 === Super Simple Site Offline ===
 Contributors: @betacore
 Tags: offline mode, under construction, redirect
-Donate link: https://betacore.tech/donate
+Donate link: https://www.patreon.com/betadev
 Requires at least: 5.2
-Tested up to: 5.3
+Tested up to: 5.4
 Requires PHP: 5.8
-Stable tag: 1.7.5
+Stable tag: 1.7.7
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Simple Site Offline by Beta is a super simple but versatile site-offline plugin. No bells and whistles, just straight to the point.
+Simple Site Offline by Beta is a super simple but versatile site-offline plugin. No bells and whistles, just straight to the point. A nice little maintenance message. Nothing more.
 
 == Description ==
 Site offline plugins are made awesome again with this piece of code. While most site offline plugins are bulky, intrusive and annoying this one is as light as a feather and has no paid options. The nav item is neatly tucked away within the settings menu so it feels like it is part of Wordpress.
@@ -45,6 +45,8 @@ To answer to foo bar dilemma. We still don't know how the foo hit the bar. But 4
 4. If you want a background image, no problem! Branding is really simple.
 
 == Changelog ==
+= 1.7.7 =
+* Tested for WP 5.4
 
 = 1.7.5 =
 * Small link in footer fix
