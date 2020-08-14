@@ -109,7 +109,9 @@ function bcSOFF_get_image($img_ID){
 	$imgid = (isset( $img_ID )) ? $img_ID : "";
 	$img   = wp_get_attachment_image_src($imgid, 'full');
 	
-	return $img[0];
+    if(isset($img[0])){
+	 return $img[0];
+    }
 	
 }
 
