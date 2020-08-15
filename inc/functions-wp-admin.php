@@ -9,17 +9,6 @@ add_action('admin_enqueue_scripts', 'bcSOFF_offline_admin');
 
 
 /* ---------------------------------------- */
-/* adding the stylesheet to the frontend */
-/*
-function bcSOFF_offline_frontend() {
-	if (!is_admin()){
-	  wp_enqueue_style('beta-offline', plugin_dir_url( __DIR__ ).'css/style.css');
-	}
-}
-add_action('wp_enqueue_scripts', 'bcSOFF_offline_frontend',100);*/
-
-
-/* ---------------------------------------- */
 /* the WP-admin page with the settings */
 
 function bcSOFF_function_for_sub(){
@@ -113,7 +102,7 @@ function bcSOFF_select_box($arg){
 		<?php // making a list of the options
 		foreach($arg['options'] as $name => $value){
 			if($value['op_value']==$arg['selected']){$checkme=' selected';}else{$checkme='';}
-			?><option value="<?php echo $value['op_value']; ?>"<?php echo $checkme; ?>><?php echo $value['op_name'];; ?></option><?php
+			?><option value="<?php echo esc_html($value['op_value']); ?>"<?php echo $checkme; ?>><?php echo esc_html($value['op_name']); ?></option><?php
 		} ?>
 	</select>
 </div>
@@ -128,8 +117,8 @@ function bcSOFF_input_field($arg){
 ?>
 <div class="bcSOFF_input_wrapper">
 	<input type="text"
-		   name="bcSOFF_<?php echo $arg['name']; ?>"
-		   value="<?php echo $arg['selected']; ?>"
+		   name="bcSOFF_<?php echo esc_html($arg['name']); ?>"
+		   value="<?php echo esc_html($arg['selected']); ?>"
 		   class="regular-text"
 		   />
 </div>
@@ -143,10 +132,10 @@ function bcSOFF_input_field($arg){
 function bcSOFF_textarea_field($arg){
 ?>
 <div class="bcSOFF_textarea_wrapper">
-	<textarea name="bcSOFF_<?php echo $arg['name']; ?>" 
+	<textarea name="bcSOFF_<?php echo esc_html($arg['name']); ?>" 
 			  class="large-text code"
 			  rows="10"
-			  cols="50"><?php echo $arg['selected']; ?></textarea>
+			  cols="50"><?php echo esc_html($arg['selected']); ?></textarea>
 </div>
 <?php	
 }
@@ -170,9 +159,9 @@ function bcSOFF_imageselect_field($arg){
 	<script type="text/javascript">
 	jQuery(document).ready(function() {
 		var $ = jQuery;
-		if ($('.<?php echo 'bcSOFF_'.$arg['name']; ?>').length > 0) {
+		if ($('.<?php echo 'bcSOFF_'.esc_html($arg['name']); ?>').length > 0) {
 			if ( typeof wp !== 'undefined' && wp.media && wp.media.editor) {
-				$('.<?php echo 'bcSOFF_'.$arg['name']; ?>').on('click', function(e) {
+				$('.<?php echo 'bcSOFF_'.esc_html($arg['name']); ?>').on('click', function(e) {
 					e.preventDefault();
 					var button = $(this);
 					var id = button.prev();
@@ -190,7 +179,7 @@ function bcSOFF_imageselect_field($arg){
 	<?php 
 	if($img != "") { ?>
 	<div class="bcSOFF_thumbnail">
-		<img src="<?= $img[0]; ?>" width="80px" />
+		<img src="<?php echo esc_html($img[0]); ?>" width="80px" />
 		<p><?php _e('The currently selected image.','betaoffline'); ?></p>
 	</div>
 	<p><?php _e('Select a new image or paste a image ID to replace the one above:','betaoffline'); ?></p>
@@ -199,14 +188,14 @@ function bcSOFF_imageselect_field($arg){
 	<p><?php _e('Select an image or paste an image ID:','betaoffline'); ?></p>	
 	<?php }	?>
 	<input type="text" 
-		   value="<?php echo $arg['selected']; ?>" 
+		   value="<?php echo esc_html($arg['selected']); ?>" 
 		   class="regular-text process_custom_images" 
 		   id="process_custom_images" 
-		   name="<?php echo 'bcSOFF_'.$arg['name']; ?>" 
+		   name="<?php echo 'bcSOFF_'.esc_html($arg['name']); ?>" 
 		   max="" 
 		   min="1" 
 		   step="1" />
-	<button class="<?php echo 'bcSOFF_'.$arg['name']; ?> button"><?php _e('Media library','betaoffline'); ?></button>
+	<button class="<?php echo 'bcSOFF_'.esc_html($arg['name']); ?> button"><?php _e('Media library','betaoffline'); ?></button>
 	</div>
 	<?php
 }

@@ -88,7 +88,7 @@ function bcSOFF_site_offline(){
 if ( ! is_admin() && ! bcSOFF_is_login_page() ) {
 
 	// if someone is not an admin or not on the login page, add this action!
-	add_action('init', 'bcSOFF_site_offline');
+	add_action('template_redirect', 'bcSOFF_site_offline');
 	
 }
 
@@ -121,8 +121,8 @@ function bcSOFF_get_image($img_ID){
 
 function bcSOFF_tracking_tags($location='top'){
     
-    $the_google_id = substr(get_option( 'bcSOFF_offline_analytics' ), 0,16);
-    $the_google_tag = substr(get_option( 'bcSOFF_offline_analytics' ), 0,2);
+    $the_google_id = esc_html(substr(get_option( 'bcSOFF_offline_analytics' ), 0,16));
+    $the_google_tag = esc_html(substr(get_option( 'bcSOFF_offline_analytics' ), 0,2));
     
     
     if($location=='top' AND $the_google_tag=='UA'){

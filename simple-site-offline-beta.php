@@ -1,11 +1,11 @@
 <?php 
 /**
 * Plugin Name: Super Simple Site Offline
-* Plugin URI: https://betacore.tech/plugins/super-simple-site-offline-for-wordpress/
+* Plugin URI: https://rikjanssen.info/plugins/super-simple-site-offline-for-wordpress/
 * Description:  Hide or redirect your website in an instant! The Super Simple Site Offline Plugin does exactly that and is above all easy to customize and track via Google Analytics or Google Tagmanager. But for your visitor just a nice little maintenance message or redirect. Nothing more.
-* Version: 1.8
-* Author: Rik Janssen (Beta)
-* Author URI: https://betacore.tech/
+* Version: 1.8.1
+* Author: Rik Janssen 
+* Author URI: https://rikjanssen.info
 * Text Domain: betaoffline
 * Domain Path: /lang
 **/
@@ -21,7 +21,7 @@ include_once('inc/functions-offline.php'); // offline mode stuff
 function bcSOFF_pl_links( $links ) {
 
 	$links = array_merge( array(
-		'<a href="' . esc_url( 'https://www.betacore.tech/documentation' ) . '">' . __( 'Documentation', 'betaoffline' ) . '</a>'
+		'<a href="' . esc_url( 'https://www.rikjanssen.info/documentation' ) . '">' . __( 'Documentation', 'betaoffline' ) . '</a>'
 	), $links );
 	
 	$links = array_merge( array(

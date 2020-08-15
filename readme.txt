@@ -5,7 +5,7 @@ Donate link: https://www.patreon.com/betadev
 Requires at least: 5.2
 Tested up to: 5.5
 Requires PHP: 7
-Stable tag: 1.7.7
+Stable tag: 1.8.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -18,6 +18,7 @@ Site offline plugins are made awesome again with this piece of code. While most 
 * Simple enable and disable button and settings page.
 * Custom background, display text and logo for the ones who have a logo.
 * A redirect option for if you want to close a site and make sure all the trafic is forwarded to the new site.
+* Put a form below or in your message using shortcode to gather emailadresses or other things.
 
 
 == Installation ==
@@ -28,6 +29,9 @@ Site offline plugins are made awesome again with this piece of code. While most 
 == Frequently Asked Questions ==
 = Can it do a redirect? =
 Oh yes it sure can! The best redirect you've ever seen.
+
+= Does it work with shortcodes? =
+Oh yeah! Now it does! Thanks to Bill P. Thanks for the idea!
 
 = How customisable is it? =
 At the moment you can edit the background image, logo, text and css. Custom HTML will be a future feature. But for now it's perfect as a quick and simple solution.
@@ -45,8 +49,12 @@ To answer to foo bar dilemma. We still don't know how the foo hit the bar. But 4
 4. If you want a background image, no problem! Branding is really simple.
 
 == Changelog ==
-= 1.8 =
+= 1.8.1 =
+* Added shortcode support to the message field
+* Added some extra sanitisation for safety
 * Fixed a undefined variable issue
+
+= 1.8 =
 * Tested for WP 5.5
 
 = 1.7.7 =

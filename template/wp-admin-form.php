@@ -99,7 +99,7 @@
                     <?php _e("The message people see", 'betaoffline'); ?>
                 </th>
                  <td>
-					 <p><?php _e('Write a message for the people that visit your site when offline mode is enabled. You can use HTML in this field but no javascript. If you like to return to the original message, just empty this field and save.','betaoffline'); ?></p><br />
+					 <p><?php _e('Write a message for the people that visit your site when offline mode is enabled. You can use HTML in this field but no javascript. If you like to return to the original message, just empty this field and save. You can also use shortcodes to embed forms like the one from Contact Form 7 here.','betaoffline'); ?></p><br />
 				<?php 
 					 
 				if (get_option('bcSOFF_offline_message')==""){
