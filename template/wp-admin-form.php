@@ -233,7 +233,7 @@ $u = wp_get_current_user();
     <div class="bcALG_mailinglist">
         <form action="https://oneweekendwebsite.us20.list-manage.com/subscribe/post?u=72e22e9c5e66e05351f6c92af&amp;id=87b9e508b0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <h2>Get an email when new plugins or important updates arrive <span>and run an efficient Wordpress site!</span></h2>
-            <p>Just subscribe to the Beta mailinglist and be informed. Don't worry, I don't like spam either but if you'd like some usefull nuggets of information in your inbox, I'd reccommend you join the list. I'm not biased at all. I know. Right?</p><br />
+            <p>Just subscribe to my mailinglist and be informed. Don't worry, I don't like spam either but if you'd like some usefull nuggets of information in your inbox, I'd reccommend you join the list. I'm not biased at all. I know. Right?</p><br />
             <ul class="bcALG_mailingform">
                 <li>
                     
@@ -263,7 +263,7 @@ $u = wp_get_current_user();
 
 
 	<div class="bcALG_logobar">
-    <a href="https://betacore.tech"><img src="<?php echo plugin_dir_url( __DIR__ ); ?>img/betalogo-b.png" /></a>
-    <p class="bcALG_url"><span>By:</span> <a href="https://www.betacore.tech" target="_blank">www.betacore.tech</a></p>
+    <a href="https://rikjanssen.info"><img src="<?php echo plugin_dir_url( __DIR__ ); ?>img/betalogo-b.png" /></a>
+    <p class="bcALG_url"><span>By:</span> <a href="https://rikjanssen.info" target="_blank">rikjanssen.info</a></p>
 	</div>
 </div>
