@@ -193,7 +193,7 @@
 		<table class="bcSOFF_forms form-table">
            <tr valign="top">
                 <th scope="row">
-                    <?php _e("Show the Beta Label", 'betaoffline'); ?>
+                    <?php _e("Show the Rik's Plugins Label", 'betaoffline'); ?>
                 </th>
                  <td>
 		<?php 
@@ -205,7 +205,8 @@
 		bcSOFF_check_input($check_vars, 'If you like this plugin, please check this box. This will show the Beta and Wordpress links at the bottom of the offline-page. Thank you!'); ?>
 					 <label></label>
                 </td>
-            </tr> 
+            </tr>
+           
 		    <tr valign="top">
                 <th scope="row">
                     <?php _e("Show this plugin some love", 'betaoffline'); ?>
@@ -229,11 +230,11 @@ $u = wp_get_current_user();
 
 ?>
 <div class="bcALG_footer">
-
+	
     <div class="bcALG_mailinglist">
         <form action="https://oneweekendwebsite.us20.list-manage.com/subscribe/post?u=72e22e9c5e66e05351f6c92af&amp;id=87b9e508b0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <h2>Get an email when new plugins or important updates arrive <span>and run an efficient Wordpress site!</span></h2>
-            <p>Just subscribe to my mailinglist and be informed. Don't worry, I don't like spam either but if you'd like some usefull nuggets of information in your inbox, I'd reccommend you join the list. I'm not biased at all. I know. Right?</p><br />
+            <p>Just subscribe to Rik's mailinglist and be informed. Don't worry, I don't like spam either but if you'd like some usefull nuggets of information in your inbox, I'd reccommend you join the list. I'm not biased at all. I know. Right?</p><br />
             <ul class="bcALG_mailingform">
                 <li>
                     

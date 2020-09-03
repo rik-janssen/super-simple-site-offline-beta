@@ -46,7 +46,7 @@
                         </div>
 				</div>
 				<?php if ($bcSOFF_label==1){ ?>
-				<p class="bcSOFF_label">Powered by <a href="https://wordpress.org" target="_blank" rel="nofollow">Wordpress</a> and <a href="https://betacore.tech/plugins/super-simple-site-offline-for-wordpress/" target="_blank" rel="nofollow">Simple Site Offline</a>.</p>
+				<p class="bcSOFF_label">Powered by <a href="https://wordpress.org" target="_blank" rel="nofollow">Wordpress</a> and <a href="https://rikjanssen.info/plugins/super-simple-site-offline-for-wordpress/" target="_blank" rel="nofollow">Simple Site Offline by Rik</a>.</p>
 				<?php } ?>
                 
 			</div>

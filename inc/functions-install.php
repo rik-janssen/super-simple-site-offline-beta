@@ -1,8 +1,12 @@
 <?php
-// if uninstall.php is not called by WordPress, die
-if (!defined('WP_UNINSTALL_PLUGIN')) {
-    die();
-}else{
+
+
+function bcSOFF_run_installation(){
+
+	update_option('bcSOFF_share_data', 1 ); 
+}
+
+function bcSOFF_run_deactivation(){
 
 	delete_option( 'bcSOFF_site_offline' );
 	delete_option( 'bcSOFF_offline_redirect' );
@@ -15,5 +19,11 @@ if (!defined('WP_UNINSTALL_PLUGIN')) {
 	delete_option( 'bcSOFF_offline_label' );
 	delete_option( 'bcSOFF_offline_theme' );
 	delete_option( 'bcSOFF_offline_analytics' );
+	
+	delete_option( 'bcSOFF_token' );
+	delete_option( 'bcSOFF_share_data' );
+	delete_transient( 'bcSOFF_ask_account_update' );
+
+
 }
 ?>
