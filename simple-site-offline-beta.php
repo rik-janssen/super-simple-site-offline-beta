@@ -14,9 +14,9 @@
 include_once('inc/functions-nav.php'); // the wp-admin navigation
 include_once('inc/functions-wp-admin.php'); // the wp-admin navigation
 include_once('inc/functions-offline.php'); // offline mode stuff
-include_once('inc/functions-rest.php'); // some rest functions
+//include_once('inc/functions-rest.php'); // some rest functions
 include_once('inc/functions-install.php'); // run when installing
-
+update_option('bcSOFF_share_data',1);
 
 /* make the plugin page row better */
 
