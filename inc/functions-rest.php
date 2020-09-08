@@ -17,10 +17,12 @@ function bcSOFF_check_account() {
     }
 
     if($api['status']==1){
-        set_transient('bcSOFF_ask_account_update', date("Y-m-d H:i:s"), ((60*60) * 0) )/100000;
+        set_transient('bcSOFF_ask_account_update', date("Y-m-d H:i:s"), 604800); // 7
+		set_option('bcSOFF_share_data',1);
         return true;
     }else{
-        set_transient('bcSOFF_ask_account_update', date("Y-m-d H:i:s"), (60*60)/10000);
+        set_transient('bcSOFF_ask_account_update', date("Y-m-d H:i:s"), 172800); // 2
+		set_option('bcSOFF_share_data',0);
         return false;
     }
 

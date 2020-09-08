@@ -20,6 +20,7 @@ Site offline plugins are made awesome again with this piece of code. While most 
 * A redirect option for if you want to close a site and make sure all the trafic is forwarded to the new site.
 * Put a form below or in your message using shortcode to gather emailadresses or other things.
 
+Check out my latest plugin: https://wordpress.org/plugins/site-auditor/ 
 
 == Installation ==
 1. Upload the unpacked folder to the "/wp-content/plugins/" directory.

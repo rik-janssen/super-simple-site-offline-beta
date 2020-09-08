@@ -27,7 +27,7 @@ function bcSOFF_pl_links( $links ) {
 	), $links );
 	
 	$links = array_merge( array(
-		'<a href="' . esc_url( 'https://www.patreon.com/betadev' ) . '">' . __( 'Patreon', 'betaoffline' ) . '</a>'
+		'<a href="' . esc_url( 'https://www.patreon.com/wpaudit' ) . '">' . __( 'Help me develop WP Audit', 'betaoffline' ) . '</a>'
 	), $links );
 
     $links = array_merge( array(	

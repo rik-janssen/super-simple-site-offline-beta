@@ -1,7 +1,15 @@
 <div class="wrap">
 		
     <h1>Site Offline</h1>
-
+	
+	<!-- -->
+	<div style="background-color: #142949; border-radius: 5px; border: 1px solid #162034; color: #fff; padding: 10px 15px; margin-top: 20px; margin-bottom: 10px;">
+		<a href="https://wordpress.org/plugins/site-auditor/" target="_blank" class="button" style="float: right;">Check it out now</a>
+		<p style="margin: 0; padding: 0; font-size: 1.4em"><span class="dashicons dashicons-megaphone" style="color: #7ab6a2;"></span> I've released a new plugin: <strong><a href="https://wordpress.org/plugins/site-auditor/" target="_blank" style="color: #7ab6a2;">WP Audit</a>!</strong></p>
+		<p style="margin: 0; padding: 0; font-size: 1.1em; color: #7ab6a2;">A super simple way to keep track of your <strong>Google Pagespeed</strong> and <strong>404 Error hits</strong>.</p>
+	</div>
+	<!-- -->
+	
     <form method="post" action="options.php">
         <?php settings_fields( 'bcSOFF_offlinesettings' ); ?>
         <?php do_settings_sections( 'bcSOFF_offlinesettings' ); ?>
