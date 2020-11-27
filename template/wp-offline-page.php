@@ -32,7 +32,7 @@
     <link rel="stylesheet" id="beta-admin-css" href="<?php echo plugin_dir_url( __DIR__ ); ?>css/style<?php echo esc_html($bcSOFF_theme); ?>.css" type="text/css" media="all" />    
     <?php bcSOFF_tracking_tags('top'); ?>
 	<style>
-		<?php echo esc_html($message_css); ?>
+		<?php echo $message_css; ?>
 	</style>
 	<body class="betaplugin">
 		<?php bcSOFF_tracking_tags('body'); ?>
