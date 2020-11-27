@@ -135,7 +135,7 @@ function bcSOFF_textarea_field($arg){
 	<textarea name="bcSOFF_<?php echo esc_html($arg['name']); ?>" 
 			  class="large-text code"
 			  rows="10"
-			  cols="50"><?php echo esc_html($arg['selected']); ?></textarea>
+			  cols="50"><?php echo $arg['selected']; ?></textarea>
 </div>
 <?php	
 }
