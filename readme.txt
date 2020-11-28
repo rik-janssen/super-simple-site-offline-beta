@@ -3,9 +3,9 @@ Contributors: @betacore
 Tags: offline mode, under construction, redirect
 Donate link: https://www.patreon.com/betadev
 Requires at least: 5.2
-Tested up to: 5.5
+Tested up to: 5.6
 Requires PHP: 7
-Stable tag: 1.9
+Stable tag: 1.10
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -50,6 +50,10 @@ To answer to foo bar dilemma. We still don't know how the foo hit the bar. But 4
 4. If you want a background image, no problem! Branding is really simple.
 
 == Changelog ==
+= 1.10 =
+* Fixed an escape bug (thanks @pattihis)
+* Tested up to 5.7
+
 = 1.9 =
 * Added a way to check for bugs and keep track of running instances.
 * Added a notification about WP Audit
