@@ -1,11 +1,10 @@
 === Super Simple Site Offline ===
 Contributors: @betacore
 Tags: offline mode, under construction, redirect
-Donate link: https://www.patreon.com/betadev
 Requires at least: 5.2
-Tested up to: 5.6
+Tested up to: 5.7.2
 Requires PHP: 7
-Stable tag: 1.10
+Stable tag: 1.11
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -19,8 +18,6 @@ Site offline plugins are made awesome again with this piece of code. While most 
 * Custom background, display text and logo for the ones who have a logo.
 * A redirect option for if you want to close a site and make sure all the trafic is forwarded to the new site.
 * Put a form below or in your message using shortcode to gather emailadresses or other things.
-
-Check out my latest plugin: https://wordpress.org/plugins/site-auditor/ 
 
 == Installation ==
 1. Upload the unpacked folder to the "/wp-content/plugins/" directory.
@@ -50,6 +47,9 @@ To answer to foo bar dilemma. We still don't know how the foo hit the bar. But 4
 4. If you want a background image, no problem! Branding is really simple.
 
 == Changelog ==
+= 1.11 = 
+* Code cleanup and testing up to 5.7.2
+
 = 1.10 =
 * Fixed an escape bug (thanks @pattihis)
 * Tested up to 5.7
