@@ -1,13 +1,11 @@
 <?php
 
-
 /* ---------------------------------------- */
 /* Setting up the navigation */
 
 function bcSOFF_admin_menu_sub_siteoffline() {
     
     // add the sub menu page for the plugin
-	// https://codex.wordpress.org/Adding_Administration_Menus
     add_submenu_page( 
         'options-general.php', 
         'Offline', 
@@ -16,6 +14,7 @@ function bcSOFF_admin_menu_sub_siteoffline() {
         'bcSOFF_offline_settings', 
         'bcSOFF_function_for_sub'  // this should correspond with the function name
     ); 
+	
 }
 
 add_action( 'admin_menu', 'bcSOFF_admin_menu_sub_siteoffline' );
@@ -49,7 +48,3 @@ function bcSOFF_offline_toolbar($admin_bar){
 }
 
 add_action('admin_bar_menu', 'bcSOFF_offline_toolbar', 100);
-
-
-
-?>
