@@ -272,7 +272,6 @@ $u = wp_get_current_user();
 
 
 	<div class="bcALG_logobar">
-    <a href="https://rikjanssen.info"><img src="<?php echo plugin_dir_url( __DIR__ ); ?>img/betalogo-b.png" /></a>
-    <p class="bcALG_url"><span>By:</span> <a href="https://rikjanssen.info" target="_blank">rikjanssen.info</a></p>
+    		<p class="bcALG_url"><span>By:</span> <a href="https://rikjanssen.info" target="_blank">rikjanssen.info</a></p>
 	</div>
 </div>
