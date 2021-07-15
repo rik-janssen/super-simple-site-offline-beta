@@ -11,18 +11,18 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Simple Site Offline by Beta is a super simple but versatile site-offline plugin. No bells and whistles, just straight to the point. A nice little maintenance message. Nothing more.
 
 == Description ==
-Site offline plugins are made awesome again with this piece of code. While most site offline plugins are bulky, intrusive and annoying this one is as light as a feather and has no paid options. The nav item is neatly tucked away within the settings menu so it feels like it is part of Wordpress.
+I experienced most site offline plugins as bulky, intrusive and annoying. Super Simple Site Offline is as light as a feather and has no paid options. The nav item is neatly tucked away within the settings menu so it feels like it is part of Wordpress. The relative simple options makes this plugin a good choice for quick maintenance work on your website, longer under construction signalling or even forwarding entire websites to another URL.
 
 = Super Simple Site Offline contains the following features: =
-* Simple enable and disable button and settings page.
-* Custom background, display text and logo for the ones who have a logo.
-* A redirect option for if you want to close a site and make sure all the trafic is forwarded to the new site.
-* Put a form below or in your message using shortcode to gather emailadresses or other things.
+* Simple enable and disable button and settings page to toggle the offline mode of your entire website.
+* Custom background, display text and the option to add a logo to your offline landing page.
+* A redirect option for if you want to close a site and make sure all the trafic is forwarded to the new site. Of course with the proper HTTP headers so Google knows what your intentions are.
+* Put a form below or in your message using shortcode to gather emailadresses or other important information so that your offline page turns in to a simple temporary landing page and you do not mis out on leads.
 
 == Installation ==
-1. Upload the unpacked folder to the "/wp-content/plugins/" directory.
+1. Upload the unpacked folder to the "/wp-content/plugins/" directory or install it via the WP plugin directory accessable by your WP instance.
 2. Activate the plugin through the "Plugins" menu in WordPress.
-3. Go to the settings menu and activate the offline mode.
+3. Go to the settings menu and activate the offline mode, set up your offline page and add a nice little message.
 
 == Frequently Asked Questions ==
 = Can it do a redirect? =
@@ -37,6 +37,9 @@ At the moment you can edit the background image, logo, text and css. Custom HTML
 = Is half of it unusable because I have to pay? =
 No. The entire thing is free and it will be in the future.
 
+= Does it work with =
+To answer to foo bar dilemma. We still don't know how the foo hit the bar. But 42 is always the answer as far as I'm concerned.
+
 = What about foo bar? =
 To answer to foo bar dilemma. We still don't know how the foo hit the bar. But 42 is always the answer as far as I'm concerned.
 
@@ -48,7 +51,9 @@ To answer to foo bar dilemma. We still don't know how the foo hit the bar. But 4
 
 == Changelog ==
 = 1.11 = 
-* Code cleanup and testing up to 5.7.2
+* Code cleanup 
+* testing up to 5.7.2
+* removed some not-needed files such as images
 
 = 1.10 =
 * Fixed an escape bug (thanks @pattihis)
