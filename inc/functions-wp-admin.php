@@ -53,8 +53,8 @@ function bcSOFF_settings_register() {
     register_setting( $setting_name, 'bcSOFF_offline_logo', $args_int );
     register_setting( $setting_name, 'bcSOFF_offline_message', $args_html );
     register_setting( $setting_name, 'bcSOFF_offline_theme', $args_text );
-	register_setting( $setting_name, 'bcSOFF_offline_css', $args_html );
-	register_setting( $setting_name, 'bcSOFF_offline_label', $args_html );
+    register_setting( $setting_name, 'bcSOFF_offline_css', $args_html );
+    register_setting( $setting_name, 'bcSOFF_offline_label', $args_html );
     register_setting( $setting_name, 'bcSOFF_offline_analytics', $args_html );
 	
 }
@@ -65,8 +65,6 @@ add_action( 'admin_init', 'bcSOFF_settings_register' );
 /* ---------------------------------------- */
 /* ---------------------------------------- */
 /* input forms and functions                */
-
-
 
 /* ---------------------------------------- */
 /* This one is a check button for the wpadm */
@@ -199,5 +197,3 @@ function bcSOFF_imageselect_field($arg){
 	</div>
 	<?php
 }
-
-?>
