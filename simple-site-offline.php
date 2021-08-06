@@ -3,18 +3,27 @@
 * Plugin Name: Super Simple Site Offline
 * Plugin URI: https://rikjanssen.info/plugins/super-simple-site-offline-for-wordpress/
 * Description: Hide or redirect your website in an instant! The Super Simple Site Offline Plugin does exactly that and is above all easy to customize and track via Google Analytics or Google Tagmanager. But for your visitor just a nice little maintenance message or redirect. Nothing more.
-* Version: 1.11
+* Version: 2.0
 * Author: Rik Janssen 
 * Author URI: https://rikjanssen.info
 * Text Domain: betaoffline
 * Domain Path: /lang
 **/
 
-/* Includes */
-include_once('inc/functions-nav.php'); // the wp-admin navigation
-include_once('inc/functions-wp-admin.php'); // the wp-admin navigation
-include_once('inc/functions-offline.php'); // offline mode stuff
-include_once('inc/functions-install.php'); // run when installing
+/* classes */
+include_once('classes/forms.php'); // form classes
+include_once('classes/header.php'); // header information
+include_once('classes/track.php'); // for visitor tracking
+include_once('classes/post.php'); // settings for individual posts
+include_once('classes/offline.php'); // the offline class 
+
+/* functions */
+include_once('functions/admin.php'); // the wp-admin functions
+include_once('functions/rights.php'); // check rights
+include_once('functions/offline.php'); // the front end offline functions
+include_once('functions/install.php'); // run when installing
+
+
 
 /* make the plugin page row better */
 
@@ -36,3 +45,5 @@ add_action( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'bcSOFF_pl_lin
 
 register_activation_hook( __FILE__, 'bcSOFF_run_installation' );
 register_deactivation_hook( __FILE__, 'bcSOFF_run_deactivation' );
+
+

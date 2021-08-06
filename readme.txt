@@ -18,6 +18,8 @@ I experienced most site offline plugins as bulky, intrusive and annoying. Super 
 * Custom background, display text and the option to add a logo to your offline landing page.
 * A redirect option for if you want to close a site and make sure all the trafic is forwarded to the new site. Of course with the proper HTTP headers so Google knows what your intentions are.
 * Put a form below or in your message using shortcode to gather emailadresses or other important information so that your offline page turns in to a simple temporary landing page and you do not mis out on leads.
+* Add the ip addresses of your clients or other people so they have unrestricted access to the website while the rest of the world will see an 'offline message'. [NEW!]
+* Whitelist pages so that they are not affected by the offline-mode. [NEW!]
 
 == Installation ==
 1. Upload the unpacked folder to the "/wp-content/plugins/" directory or install it via the WP plugin directory accessable by your WP instance.
@@ -37,9 +39,6 @@ At the moment you can edit the background image, logo, text and css. Custom HTML
 = Is half of it unusable because I have to pay? =
 No. The entire thing is free and it will be in the future.
 
-= Does it work with =
-To answer to foo bar dilemma. We still don't know how the foo hit the bar. But 42 is always the answer as far as I'm concerned.
-
 = What about foo bar? =
 To answer to foo bar dilemma. We still don't know how the foo hit the bar. But 42 is always the answer as far as I'm concerned.
 
@@ -50,8 +49,13 @@ To answer to foo bar dilemma. We still don't know how the foo hit the bar. But 4
 4. If you want a background image, no problem! Branding is really simple.
 
 == Changelog ==
-= 1.11 = 
-* Code cleanup 
+= 2.0 =
+This version is a major release. Please check all the functions and settings you've made earlier.
+* Grouped a bunch of functions in classes
+* Editor upgrade, now it has a nice editor for your message
+* Added a way to exempt pages from being hidden (thanks Christian Zumbrunnen)
+* Added a way to exempt ip addresses from being shown the offline message 
+* Restructured the admin page a bit
 * testing up to 5.7.2 and 5.8 
 * removed some not-needed files such as images
 
