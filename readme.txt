@@ -4,7 +4,7 @@ Tags: offline mode, under construction, redirect
 Requires at least: 5.2
 Tested up to: 5.8
 Requires PHP: 7
-Stable tag: 1.11
+Stable tag: 2.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
