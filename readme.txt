@@ -4,7 +4,7 @@ Tags: offline mode, under construction, redirect
 Requires at least: 5.2
 Tested up to: 5.8
 Requires PHP: 7
-Stable tag: 2.0
+Stable tag: 2.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -49,8 +49,11 @@ To answer to foo bar dilemma. We still don't know how the foo hit the bar. But 4
 4. If you want a background image, no problem! Branding is really simple.
 
 == Changelog ==
+= 2.1 =
+* Fixed a predefined index bug
+
 = 2.0 =
-This version is a major release. Please check all the functions and settings you've made earlier.
+* This version is a major release. Please check all the functions and settings you've made earlier.
 * Grouped a bunch of functions in classes
 * Editor upgrade, now it has a nice editor for your message
 * Added a way to exempt pages from being hidden (thanks Christian Zumbrunnen)
