@@ -8,7 +8,7 @@
 function ssof_checkRights(){
 
     // override all for viewing
-    if($_GET['preview_offline']==true){ return false; }
+    if(isset($_GET['preview_offline']) && $_GET['preview_offline']==true){ return false; }
 
     // is logged in as admin
     if(is_admin()){ return true; }
