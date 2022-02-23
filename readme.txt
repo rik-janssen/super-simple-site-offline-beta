@@ -2,7 +2,7 @@
 Contributors: @betacore
 Tags: offline mode, under construction, redirect
 Requires at least: 5.2
-Tested up to: 5.8
+Tested up to: 5.9
 Requires PHP: 7
 Stable tag: 2.1
 License: GPLv3
@@ -49,8 +49,13 @@ To answer to foo bar dilemma. We still don't know how the foo hit the bar. But 4
 4. If you want a background image, no problem! Branding is really simple.
 
 == Changelog ==
+
 = 2.1 =
-* Fixed a predefined index bug
+* Fixed an undefined index error in the rights.php functions file. Thanks @pimschaaf!
+
+= 2.0.2 =
+* Data from WP_Editor wasn't being saved 
+* Fixed a static class 
 
 = 2.0 =
 * This version is a major release. Please check all the functions and settings you've made earlier.

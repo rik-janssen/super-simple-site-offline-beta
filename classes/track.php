@@ -4,7 +4,7 @@ class tracking{
     /* ---------------------------------------- */
     /* The Tracking tag for GA and TM           */
 
-    function tags($location='top'){
+    public static function tags($location='top'){
 
         $the_google_id = esc_html(substr(get_option( 'bcSOFF_offline_analytics' ), 0,16));
         $the_google_tag = esc_html(substr(get_option( 'bcSOFF_offline_analytics' ), 0,2));

@@ -29,7 +29,6 @@ include_once('functions/install.php'); // run when installing
 
 function bcSOFF_pl_links( $links ) {
 
-
     $links = array_merge( array(	
 		'<a href="' . esc_url( admin_url( '/options-general.php?page=bcSOFF_offline_settings' ) ) . '">' . __( 'Offline', 'betaoffline' ) . '</a>'
     ), $links );

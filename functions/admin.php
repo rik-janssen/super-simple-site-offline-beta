@@ -107,7 +107,6 @@ function bcSOFF_settings_register() {
     register_setting( 'bcSOFF_offlinedesign', 'bcSOFF_offline_message', $args_html );
     register_setting( 'bcSOFF_offlinedesign', 'bcSOFF_offline_theme', $args_text );
     register_setting( 'bcSOFF_offlinedesign', 'bcSOFF_offline_css', $args_html );
-    
     register_setting( 'bcSOFF_offlinedesign', 'bcSOFF_offline_label', $args_html );
     
     register_setting( 'bcSOFF_offlinestats', 'bcSOFF_offline_analytics', $args_html );

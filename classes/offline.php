@@ -7,7 +7,7 @@ class ssof_offline{
     /* ---------------------------------------- */
     /* Fetch image information by ID            */
 
-    function getImage($img_ID){
+    public static function getImage($img_ID){
 
 
         $imgid = (isset( $img_ID )) ? $img_ID : "";
@@ -23,7 +23,7 @@ class ssof_offline{
     /* ---------------------------------------- */
     /* Quick check if we are on a login page    */
      
-    function loginPage() {
+    public static function loginPage() {
 
         // check if you are visiting the login page or register page
         return in_array($GLOBALS['pagenow'], array('wp-login.php', 'wp-register.php'));
@@ -33,7 +33,7 @@ class ssof_offline{
 
     
     
-    function runPage(){
+    public static function runPage(){
         
 
         // is the plugin active?

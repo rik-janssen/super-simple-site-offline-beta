@@ -7,7 +7,7 @@ class ssof_redirect{
     /* Some header information to give it some  */
     /* personality for services like Google.    */
 
-    function set($option,$url=false){
+    public static function set($option,$url=false){
 
         // check the protocol
         if ( $_SERVER['SERVER_PROTOCOL'] === 'HTTP/1.1' ) {
@@ -39,7 +39,7 @@ class ssof_redirect{
 
     }
     
-    function location($url){
+    public static function location($url){
         // when the user wants a redirect...
         header( 'Location: '.$url );
     }
@@ -48,7 +48,7 @@ class ssof_redirect{
     /* ---------------------------------------- */
     /* Check if the redirect header is active   */
     
-    function active(){
+    public static function active(){
     
         if(get_option( 'bcSOFF_offline_redirect' )==1){
             return true;

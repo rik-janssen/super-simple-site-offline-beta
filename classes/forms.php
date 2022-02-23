@@ -4,7 +4,7 @@ class sso_forms {
  
     
     
-    function input($arg){
+    public static function input($arg){
         ?>
         <div class="bcSOFF_input_wrapper">
             <input type="text"
@@ -16,7 +16,7 @@ class sso_forms {
         <?php	
     }
     
-    function select($arg){
+    public static function select($arg){
         ?>
         <div class="bcSOFF_select_wrapper">
             <select name="bcSOFF_<?php echo $arg['name']; ?>">
@@ -30,7 +30,7 @@ class sso_forms {
         <?php
     }
     
-    function check($arg, $label=''){
+    public static function check($arg, $label=''){
         	if ($arg['selected']==''){
                 $arg['selected']=0;
             }
@@ -50,7 +50,7 @@ class sso_forms {
     }
 
      
-    function textarea($arg){
+    public static function textarea($arg){
         ?>
         <div class="bcSOFF_textarea_wrapper">
             <textarea name="bcSOFF_<?php echo esc_html($arg['name']); ?>" 
@@ -62,7 +62,7 @@ class sso_forms {
     }
 
     
-    function image($arg){
+    public static function image($arg){
         $imgid =(isset( $arg[ 'selected' ] )) ? $arg[ 'selected' ] : "";
         $img    = wp_get_attachment_image_src($imgid, 'thumbnail');
 
